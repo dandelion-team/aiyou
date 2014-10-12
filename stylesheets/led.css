@@ -190,26 +190,26 @@ body {
 /* line 108, ../sass/common.scss */
 #section2 .wrap #flower .flower01 {
   position: absolute;
-  bottom: 74px;
+  bottom: 30%;
   left: 0;
 }
 /* line 113, ../sass/common.scss */
 #section2 .wrap #flower .flower02 {
   position: absolute;
-  bottom: 170px;
-  left: 77px;
+  bottom: 65%;
+  left: 19%;
 }
 /* line 118, ../sass/common.scss */
 #section2 .wrap #flower .flower03 {
   position: absolute;
-  bottom: 124px;
-  left: 198px;
+  bottom: 48%;
+  left: 49%;
 }
 /* line 123, ../sass/common.scss */
 #section2 .wrap #flower .flower04 {
   position: absolute;
-  bottom: 92px;
-  left: 330px;
+  bottom: 37%;
+  left: 80.5%;
 }
 
 /* line 134, ../sass/common.scss */
