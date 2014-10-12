@@ -111,7 +111,7 @@ body {
 
 /* line 42, ../sass/common.scss */
 #section1 {
-  background: url("../imgs/bg001.jpg") no-repeat top center/100% 80% white !important;
+  background: url("../imgs/bg001.png") no-repeat top center/100% 80% white !important;
 }
 /* line 44, ../sass/common.scss */
 #section1 .main01 {
@@ -180,11 +180,11 @@ body {
 }
 /* line 101, ../sass/common.scss */
 #section2 .wrap #flower {
-  min-height: 320px;
+  height: 30%;
   width: 42.3%;
   position: absolute;
   bottom: 0;
-  left: 277px;
+  left: 29%;
   background: url("../imgs/flower-b.png") no-repeat bottom center;
 }
 /* line 108, ../sass/common.scss */
@@ -227,7 +227,7 @@ body {
 /* line 143, ../sass/common.scss */
 #section3 .wrap .main03 {
   position: absolute;
-  bottom: 15%;
+  bottom: 10%;
   width: 100%;
   text-align: left;
 }
@@ -243,31 +243,31 @@ body {
 /* line 156, ../sass/common.scss */
 #section3 .wrap .main03 .box02 {
   position: absolute;
-  left: 12.8%;
+  left: 13.8%;
 }
 /* line 160, ../sass/common.scss */
 #section3 .wrap .main03 .box03 {
   position: absolute;
-  left: 25.7%;
+  left: 27.3%;
 }
 /* line 164, ../sass/common.scss */
 #section3 .wrap .main03 .box04 {
   position: absolute;
-  left: 38.5%;
+  left: 41%;
 }
 /* line 168, ../sass/common.scss */
 #section3 .wrap .main03 .box05 {
   position: absolute;
-  left: 51.5%;
+  left: 54.8%;
 }
 /* line 172, ../sass/common.scss */
 #section3 .wrap .main03 .box06 {
   position: absolute;
-  left: 64.3%;
+  left: 68.4%;
 }
 /* line 176, ../sass/common.scss */
 #section3 .wrap .main03 .box07 {
-  left: 77.5%;
+  left: 82%;
 }
 /* line 180, ../sass/common.scss */
 #section3 .wrap .main03 .box08 {
@@ -277,8 +277,8 @@ body {
 }
 /* line 184, ../sass/common.scss */
 #section3 .wrap .main03 .box08 img {
-  margin-left: 3.3%;
-  width: 85%;
+  margin-left: 3%;
+  width: 90%;
 }
 
 /* line 195, ../sass/common.scss */
