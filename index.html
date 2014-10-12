@@ -1,18 +1,362 @@
- <!DOCTYPE html>
-<html>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
 <head>
-<link type="text/css" rel="stylesheet" href="stylesheets/desktop.css" media="only screen and (max-width:1024px)" />
-<link type="text/css" rel="stylesheet" href="stylesheets/led.css" media="only screen and (min-width:1025px)" />
-<link type="text/css" rel="stylesheet" href="stylesheets/print.css" media="print" />
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>爱佑慈善基金会</title>
+	<meta name="author" content="爱佑慈善基金会" />
+	<meta name="description" content="爱佑慈善基金会" />
+	<meta name="keywords"  content="爱佑慈善基金会" />
+	<meta name="Resource-type" content="Document" />
+
+	<link rel="stylesheet" type="text/css" href="libs/jquery.fullPage.css" />
+	<link rel="stylesheet" type="text/css" href="examples.css" />
+	<link type="text/css" rel="stylesheet" href="stylesheets/desktop.css" media="only screen and (max-width:1024px)" />
+    <link type="text/css" rel="stylesheet" href="stylesheets/led.css" media="only screen and (min-width:1025px)" />
+    <link type="text/css" rel="stylesheet" href="stylesheets/print.css" media="print" />
 <!--[if IE]>
   <link type="text/css" rel="stylesheet" href="stylesheets/ie.css" media="screen" />
 <![endif]-->
+
+	<!--[if IE]>
+		<script type="text/javascript">
+			 var console = { log: function() {} };
+		</script>
+	<![endif]-->
+
+	<script src="libs/jquery.min.js"></script>
+	<script src="libs/jquery-ui.min.js"></script>
+
+	<script type="text/javascript" src="libs/jquery.fullPage.js"></script>
+	<script type="text/javascript" src="examples.js"></script>
+	<script src="libs/jquery.easing.1.3.js"></script>
+    <script src="libs/jQueryRotateCompressed.js"></script>
+    <script type="text/javascript" src="libs/jquery-css-transform.js"></script>
+    <script type="text/javascript" src="libs/rotate3Di.js"></script>
+
+	<script type="text/javascript">
+		$(document).ready(function() {
+		    // 首页图片效果
+            $('#homeImg').rotate3Di(20, 1000);
+			setTimeout(function() {$('#homeImg').rotate3Di(0, 1000);}, 800);
+			
+			// 十年成长效果
+			var rate = 1.2;
+			$('.growTooltip').mouseenter(function() {
+                $(this).animate({
+                    width: $(this).width()*rate,
+					height: $(this).height()*rate,
+                }, 0, 'easeInOutCirc', function() {
+                });
+            });
+            
+            $('.growTooltip').mouseleave(function() {
+                $(this).animate({
+                    width: $(this).width()/rate,
+					height: $(this).height()/rate,
+                }, 0, 'easeInOutCirc', function() {
+                });
+            });
+			
+			var index2Times = 0;
+			
+			$('#fullpage').fullpage({
+				'verticalCentered': false,
+				'css3': true,
+				'sectionsColor': ['#F0F2F4', '#fff', '#fff'],
+				'navigation': true,
+				'navigationPosition': 'right',
+				'navigationTooltips': [ '十年绽放', '给生命一次机会', '1、爱佑十年成长', '2、爱佑十年成长', '3、爱佑童心'],
+
+				'afterLoad': function(anchorLink, index){
+				    // 首页图片效果
+					if (index == 1) {
+                        $('#homeImg').rotate3Di(20, 1000);
+			            setTimeout(function() {$('#homeImg').rotate3Di(0, 1000);}, 800);
+					}
+			
+					// 花旋转效果
+					if (index == 2) {
+					    index2Times += 1;
+					    if (index2Times == 1) {
+					        rotate(".flower02");
+						    setTimeout(dictateRotate, 800);
+						}
+					}					
+					// 爱佑十年成长（2）
+					if (index == 4) {
+					    $('.row01').animate({
+                          opacity: 1,
+                          left: '-170',
+                        }, "slow", function() {
+                          showB();
+                        });
+                        
+                        function showB() {
+                          $('.row02').animate({
+                            opacity: 1,
+                            left: '-170',
+                          }, "slow", function() {
+                            showC();
+                          });
+                        }
+                        
+                        function showC() {
+                          $('.row03').animate({
+                            opacity: 1,
+                            left: '-170',
+                          }, "slow", function() {
+                            showD();
+                          });
+                        }
+                        function showD() {
+                          $('.row04').animate({
+                            opacity: 1,
+                            left: '-170',
+                          }, "slow", function() {
+                          });
+                        }
+					} else {
+					    $('.row01').css("left", "-746px").css("opacity", 0);
+						$('.row02').css("left", "-746px").css("opacity", 0);
+						$('.row03').css("left", "-746px").css("opacity", 0);
+						$('.row04').css("left", "-746px").css("opacity", 0);
+					}
+					
+					// 爱佑童心
+					if (index == 5) {
+                        $(function () {
+                            $('.right05').highcharts({
+                                chart: {
+                                    type: 'column',
+									backgroundColor: 'transparent',
+									borderColor: '#44B9A3',
+                                },
+                                title: {
+                                    text: ''
+                                },
+                                subtitle: {
+                                    text: ''
+                                },
+                                xAxis: {
+                                    type: 'category',
+									labels: {
+									    style: {
+	                                        color: '#44B9A3',
+                                        }
+									}
+									,
+									lineWidth: 1,
+									lineColor: '#44B9A3',minorGridLineWidth: 0,
+                                },
+                                yAxis: {
+								stackLabels: {enabled: true,},
+                                    min: 0,
+                                    title: {
+                                        text: ''
+                                    },
+									labels: {
+									    step: 1,
+									    style: {
+	                                        color: '#44B9A3',
+                                        }
+									},
+									gridLineColor: 'transparent',
+									lineWidth: 1,
+									lineColor: '#44B9A3',
+                                },
+        	    	            tooltip: {
+                                    valueSuffix: '人'
+                                },
+                                legend: {
+                                    enabled: false
+                                },
+                                series: [{
+								    name: '数量',
+                                    data: [
+                                        ['2006', 139],
+                                        ['2007', 1068],
+                                        ['2008', 1335],
+                                        ['2009', 2067],
+                                        ['2010', 2990],
+                                        ['2011', 3952],
+                                        ['2012', 4591],
+                                        ['2013', 4608],
+                                        ['2014', 4591]
+                                    ],
+                                    dataLabels: {
+									    color: '#44B9A3',
+                                        enabled: true,
+                                        align: 'right',
+                                        x: 10
+                                    },
+									color: '#44B9A3',
+                                }],
+								credits: {
+								    enabled: false,
+								},
+								navigation: {
+								    buttonOptions: {
+									    enabled: false,
+									}
+								}
+                            });
+                        });
+					}
+				},
+
+				'onLeave': function(index, nextIndex, direction) {
+				}
+			});
+			
+			function dictateRotate() {
+			    rotate(".flower01");
+				rotate(".flower03");
+				rotate(".flower04");
+			}
+			
+			function rotate(objID) {
+                var angle = 0;
+                setInterval(function() {
+                  angle += 3;
+                  $(objID).rotate(angle);
+                }, 50);
+            }
+		});
+	</script>
+
 </head>
 <body>
 
-<h1>My First Heading</h1>
+<div id="fullpage">
+    <!-- 首页 -->
+	<div class="section" id="section1">		  
+		<div class="wrap">
+		   <div class="main01"><img id="homeImg" src="imgs/01.png"></div>
+		   <div class="logo">
+			     <div class="logo01"><img src="imgs/logo.png"></div>
+				 <div class="heart"><img src="imgs/heart.png"></div>
+	       </div>
+		</div>
+	</div>
+	<!-- 第二页 花朵-->
+	<div class="section" id="section2">
+		<div class="wrap">
+		      <div class="title01"><img src="imgs/title001.png"></div>
+			  <div id="flower">
+			    <div class="flower01">
+				  <img src="imgs/flower-t01.png">
+				</div>
+				<div class="flower02">
+				  <img src="imgs/flower-t02.png">
+				</div>
+				<div class="flower03">
+				  <img src="imgs/flower-t03.png">
+				</div>
+				<div class="flower04">
+				  <img src="imgs/flower-t04.png">
+				</div>
+				<div class="clear"></div>
+			  </div>
+			  <div class="clear"></div>
+		</div>
+	</div>
+	<!-- 第三页 爱佑十年成长 -->
+	<div class="section" id="section3">
+		<div class="wrap">
+			<div class="title">
+			    <img src="imgs/page-title001.png">
+			</div>
+			<div class="main03">
+			    
+				 <img class="growTooltip box01" src="imgs/001.png">
+				
+				
+				
+				  <img class="growTooltip box02" src="imgs/002.png">
+				
+				
+				
+				 <img class="growTooltip box03" src="imgs/003.png">
+				
+				
+				
+				 <img class="growTooltip box04" src="imgs/004.png">
+				
+				
+				
+				 <img class="growTooltip box05" src="imgs/005.png">
+				
+				
+				
+				 <img class="growTooltip box06" src="imgs/006.png">
+				
+				
+				
+				 <img class="growTooltip box07" src="imgs/007.png">
+				 <div class="clear"></div>
+				
+				<div class="box08">
+				 <img src="imgs/009.png">
+				</div>
+				
+			</div>
+		</div>
+	</div>
+	<!-- 第四页 爱佑十年成长二 -->
+	<div class="section" id="section4">
+		<div class="wrap">
+			<div class="title">
+			    <img src="imgs/page-title002.png">
+			</div>
+			<div class="main04">
+				<div class="row01"><img src="imgs/img002.png"></div>
+				<div class="row02"><img src="imgs/img003.png"></div>
+				<div class="row03"><img src="imgs/img004.png"></div>
+				<div class="row04"><img src="imgs/img005.png"></div>
+				<div class="text"><img src="imgs/img006.png"></div>
+			</div>
+		</div>
+	</div>
+	
 
-<p>My first paragraph.</p>
+	<!-- 第五页 爱佑童心 -->
+	<div class="section" id="section5">
+		<div class="wrap">
+			<div class="title">
+			    <img src="imgs/page-title003.png">
+			</div>
+			<div class="main05">
+			    <div class="left05">
+				  <img src="imgs/in3-img.png">
+				</div>
+				<div class="right05"></div>
+				<div class="clear"></div>
+			</div>
+		</div>
+	</div>
+	
+		<!-- 第六页 爱佑童心 -->
+	<div class="section" id="section6">
+		<div class="wrap">
+			<div class="title">
+			    <img src="imgs/page-title004.png">
+			</div>
+			<div class="main06">
+			    <div class="left06">
+				  <img src="imgs/in4-img.png">
+				</div>
+				<div class="right06"></div>
+				<div class="clear"></div>
+			</div>
+		</div>
+	</div>
 
+</div>
+	
+	<script src="libs/charts/highcharts.src.js"></script>
+    <script src="libs/charts/highcharts-3d.js"></script>
+    <script src="libs/charts/modules/exporting.js"></script>
+	
 </body>
-</html> 
+</html>
