@@ -392,7 +392,12 @@ body {
   font-size: 12px;
 }
 
-/* line 10, ../sass/desktop.scss */
+/* line 7, ../sass/desktop.scss */
+.wrap {
+  width: 960px;
+}
+
+/* line 12, ../sass/desktop.scss */
 #section2 .wrap #flower {
   height: 240px;
 }
