@@ -28,7 +28,6 @@
 	<script src="libs/jquery-ui.min.js"></script>
 
 	<script type="text/javascript" src="libs/jquery.fullPage.js"></script>
-	<script type="text/javascript" src="examples.js"></script>
 	<script src="libs/jquery.easing.1.3.js"></script>
     <script src="libs/jQueryRotateCompressed.js"></script>
     <script type="text/javascript" src="libs/jquery-css-transform.js"></script>
@@ -66,9 +65,9 @@
 				'sectionsColor': ['#F0F2F4', '#fff', '#fff'],
 				'navigation': true,
 				'navigationPosition': 'right',
-				'navigationTooltips': [ '十年绽放', '给生命一次机会', '1、爱佑十年成长', '2、爱佑十年成长', '3、爱佑童心'],
+				'navigationTooltips': [ '十年绽放', '给生命一次机会', '1、爱佑十年成长', '2、爱佑十年成长', '3、爱佑童心', '4、爱佑童心（医院）'],
 
-				'afterLoad': function(anchorLink, index){
+				'afterLoad': function(anchorLink, index) {
 				    // 首页图片效果
 					if (index == 1) {
                         $('#homeImg').rotate3Di(20, 1000);
@@ -125,82 +124,110 @@
 					
 					// 爱佑童心
 					if (index == 5) {
-                        $(function () {
-                            $('.right05').highcharts({
-                                chart: {
-                                    type: 'column',
-									backgroundColor: 'transparent',
-									borderColor: '#44B9A3',
-                                },
+                        $('.right05').highcharts({
+                            chart: {
+                                type: 'column',
+								backgroundColor: 'transparent',
+								borderColor: '#44B9A3',
+                            },
+                            title: {
+                                text: ''
+                            },
+                            subtitle: {
+                                text: ''
+                            },
+                            xAxis: {
+                                type: 'category',
+								labels: {
+								    style: {
+	                                    color: '#44B9A3',
+                                    }
+								}
+								,
+								lineWidth: 1,
+								lineColor: '#44B9A3',minorGridLineWidth: 0,
+                            },
+                            yAxis: {
+							    stackLabels: {enabled: true,},
+                                min: 0,
                                 title: {
                                     text: ''
                                 },
-                                subtitle: {
+								labels: {
+								    step: 1,
+								    style: {
+	                                     color: '#44B9A3',
+                                     }
+								},
+								gridLineColor: 'transparent',
+								lineWidth: 1,
+								lineColor: '#44B9A3',
+                             },
+        	    	         tooltip: {
+                                valueSuffix: '人'
+                             },
+                             legend: {
+                                enabled: false
+                             },
+                             series: [{
+							    name: '数量',
+                                data: [
+                                    ['2006', 139],
+                                    ['2007', 1068],
+                                    ['2008', 1335],
+                                    ['2009', 2067],
+                                    ['2010', 2990],
+                                    ['2011', 3952],
+                                    ['2012', 4591],
+                                    ['2013', 4608],
+                                    ['2014', 4591]
+                                ],
+                                dataLabels: {
+								   color: '#44B9A3',
+                                   enabled: true,
+                                   align: 'right',
+                                   x: 10
+                                },
+								color: '#44B9A3',
+                             }],
+							credits: {
+							    enabled: false,
+							},
+							navigation: {
+							    buttonOptions: {
+								    enabled: false,
+								}
+							}
+                         });
+					}
+					
+					// 爱佑童心（定点医院）
+					if (index == 6) {
+					    $('.right06').highcharts({
+                            chart: {
+                                type: 'bubble',
+                                zoomType: 'xy',
+								backgroundColor: 'transparent',
+                            },
+                            title: {
+                                text: ''
+                            },
+							yAxis: {
+							    stackLabels: {enabled: true,},
+                                min: 0,
+                                title: {
                                     text: ''
                                 },
-                                xAxis: {
-                                    type: 'category',
-									labels: {
-									    style: {
-	                                        color: '#44B9A3',
-                                        }
-									}
-									,
-									lineWidth: 1,
-									lineColor: '#44B9A3',minorGridLineWidth: 0,
-                                },
-                                yAxis: {
-								stackLabels: {enabled: true,},
-                                    min: 0,
-                                    title: {
-                                        text: ''
-                                    },
-									labels: {
-									    step: 1,
-									    style: {
-	                                        color: '#44B9A3',
-                                        }
-									},
-									gridLineColor: 'transparent',
-									lineWidth: 1,
-									lineColor: '#44B9A3',
-                                },
-        	    	            tooltip: {
-                                    valueSuffix: '人'
-                                },
-                                legend: {
-                                    enabled: false
-                                },
-                                series: [{
-								    name: '数量',
-                                    data: [
-                                        ['2006', 139],
-                                        ['2007', 1068],
-                                        ['2008', 1335],
-                                        ['2009', 2067],
-                                        ['2010', 2990],
-                                        ['2011', 3952],
-                                        ['2012', 4591],
-                                        ['2013', 4608],
-                                        ['2014', 4591]
-                                    ],
-                                    dataLabels: {
-									    color: '#44B9A3',
-                                        enabled: true,
-                                        align: 'right',
-                                        x: 10
-                                    },
-									color: '#44B9A3',
-                                }],
-								credits: {
-								    enabled: false,
-								},
-								navigation: {
-								    buttonOptions: {
-									    enabled: false,
-									}
-								}
-                            });
+							},
+							credits: {
+							    enabled: false,
+							},
+                            legend: {
+                                enabled: false
+                            },
+                            series: [{
+                                data: [[2006, 3, 3], [2007, 6, 6], [2008, 8, 8], [2009, 9, 9], [2010, 19, 19], [2011, 31, 31], [2012, 36, 36], [2013, 54, 54]]
+                            }]
                         });
 					}
 				},
@@ -336,7 +363,7 @@
 		</div>
 	</div>
 	
-		<!-- 第六页 爱佑童心 -->
+	<!-- 第六页 爱佑童心 -->
 	<div class="section" id="section6">
 		<div class="wrap">
 			<div class="title">
@@ -354,9 +381,8 @@
 
 </div>
 	
-	<script src="libs/charts/highcharts.src.js"></script>
-    <script src="libs/charts/highcharts-3d.js"></script>
-    <script src="libs/charts/modules/exporting.js"></script>
+	<script src="libs/charts/highcharts.js"></script>
+	<script src="libs/charts/highcharts-more.js"></script>
 	
 </body>
 </html>
