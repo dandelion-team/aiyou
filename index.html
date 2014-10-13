@@ -156,8 +156,8 @@
 								labels: {
 								    step: 1,
 								    style: {
-	                                     color: '#44B9A3',
-                                     }
+	                                    color: '#44B9A3',
+                                    }
 								},
 								gridLineColor: 'transparent',
 								lineWidth: 1,
@@ -212,12 +212,17 @@
                             title: {
                                 text: ''
                             },
+                            xAxis: {
+							    gridLineColor: '#000000',
+                            },
 							yAxis: {
 							    stackLabels: {enabled: true,},
                                 min: 0,
                                 title: {
                                     text: ''
                                 },
+								gridLineColor: 'transparent',
+								lineWidth: 1,
 							},
 							credits: {
 							    enabled: false,
@@ -226,7 +231,11 @@
                                 enabled: false
                             },
                             series: [{
-                                data: [[2006, 3, 3], [2007, 6, 6], [2008, 8, 8], [2009, 9, 9], [2010, 19, 19], [2011, 31, 31], [2012, 36, 36], [2013, 54, 54]]
+                                data: [[2006, 3, 3], [2007, 6, 6], [2008, 8, 8], [2009, 9, 9], [2010, 19, 19], [2011, 31, 31], [2012, 36, 36], [2013, 54, 54]],
+                                dataLabels: {
+								   color: '#44B9A3',
+                                   enabled: true,
+                                },
                             }]
                         });
 					}
