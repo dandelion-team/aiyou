@@ -291,6 +291,27 @@ body {
 	      }
 	    }
 }
+// section7
+	
+#section7 {
+	    background-color: #22313C !important;
+		.wrap {
+	      height: 100%;
+          .title {
+		    img {
+			  width: 40.3%;
+			}
+		  }
+		  .main07 {
+		    background: url("../imgs/in5-img01.png") no-repeat top center;
+			height: 350px;
+			.zz {
+			  position: relative;
+			  left: 0;
+			}
+		  }
+		}
+}
 
 
 

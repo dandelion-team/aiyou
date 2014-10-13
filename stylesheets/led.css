@@ -387,6 +387,29 @@ body {
   background: url("../imgs/in4-rbg.png") no-repeat bottom right/100% auto;
 }
 
+/* line 296, ../sass/common.scss */
+#section7 {
+  background-color: #22313C !important;
+}
+/* line 298, ../sass/common.scss */
+#section7 .wrap {
+  height: 100%;
+}
+/* line 301, ../sass/common.scss */
+#section7 .wrap .title img {
+  width: 40.3%;
+}
+/* line 305, ../sass/common.scss */
+#section7 .wrap .main07 {
+  background: url("../imgs/in5-img01.png") no-repeat top center;
+  height: 350px;
+}
+/* line 308, ../sass/common.scss */
+#section7 .wrap .main07 .zz {
+  position: relative;
+  left: 0;
+}
+
 /* line 4, ../sass/led.scss */
 body {
   font-size: 30px;
