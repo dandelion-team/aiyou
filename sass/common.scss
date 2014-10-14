@@ -481,13 +481,17 @@ body {
 		    .left09 {
 			  float: left;
 			  width: 18.5%;
+			  padding-right: 15%;
 			  img {
 			    width: 100%;
 				height: auto;
 			  }
 			}
 			.right09 {
-			  float: right;
+			  float: left;
+			  width: 46.1%;
+			  height:238px;
+			  background: url("../imgs/in7-r-bg.png") no-repeat bottom right/100% auto;
 			}
 		  }
 		}

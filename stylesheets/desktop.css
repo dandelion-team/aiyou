@@ -600,130 +600,134 @@ body {
 #section9 .wrap .main09 .left09 {
   float: left;
   width: 18.5%;
+  padding-right: 15%;
 }
-/* line 484, ../sass/common.scss */
+/* line 485, ../sass/common.scss */
 #section9 .wrap .main09 .left09 img {
   width: 100%;
   height: auto;
 }
-/* line 489, ../sass/common.scss */
+/* line 490, ../sass/common.scss */
 #section9 .wrap .main09 .right09 {
-  float: right;
+  float: left;
+  width: 46.1%;
+  height: 238px;
+  background: url("../imgs/in7-r-bg.png") no-repeat bottom right/100% auto;
 }
 
-/* line 498, ../sass/common.scss */
+/* line 502, ../sass/common.scss */
 #section10 {
   background-color: #F39935 !important;
 }
-/* line 500, ../sass/common.scss */
+/* line 504, ../sass/common.scss */
 #section10 .wrap {
   height: 100%;
 }
-/* line 503, ../sass/common.scss */
+/* line 507, ../sass/common.scss */
 #section10 .wrap .title img {
   width: 40.3%;
 }
 
-/* line 512, ../sass/common.scss */
+/* line 516, ../sass/common.scss */
 #section11 {
   background-color: #21303d !important;
 }
-/* line 514, ../sass/common.scss */
+/* line 518, ../sass/common.scss */
 #section11 .wrap {
   height: 100%;
 }
-/* line 517, ../sass/common.scss */
+/* line 521, ../sass/common.scss */
 #section11 .wrap .title img {
   width: 40.3%;
 }
 
-/* line 526, ../sass/common.scss */
+/* line 530, ../sass/common.scss */
 #section12 {
   background-color: #44B9A3 !important;
 }
-/* line 528, ../sass/common.scss */
+/* line 532, ../sass/common.scss */
 #section12 .wrap {
   height: 100%;
 }
-/* line 531, ../sass/common.scss */
+/* line 535, ../sass/common.scss */
 #section12 .wrap .title img {
   width: 40.3%;
 }
 
-/* line 540, ../sass/common.scss */
+/* line 544, ../sass/common.scss */
 #section13 {
   background-color: #76BD46 !important;
 }
-/* line 542, ../sass/common.scss */
+/* line 546, ../sass/common.scss */
 #section13 .wrap {
   height: 100%;
 }
-/* line 545, ../sass/common.scss */
+/* line 549, ../sass/common.scss */
 #section13 .wrap .title img {
   width: 40.3%;
 }
 
-/* line 554, ../sass/common.scss */
+/* line 558, ../sass/common.scss */
 #section14 {
   background-color: #f39834 !important;
 }
-/* line 556, ../sass/common.scss */
+/* line 560, ../sass/common.scss */
 #section14 .wrap {
   height: 100%;
 }
-/* line 559, ../sass/common.scss */
+/* line 563, ../sass/common.scss */
 #section14 .wrap .title img {
   width: 40.3%;
 }
 
-/* line 568, ../sass/common.scss */
+/* line 572, ../sass/common.scss */
 #section15 {
   background-color: #22313C !important;
 }
-/* line 570, ../sass/common.scss */
+/* line 574, ../sass/common.scss */
 #section15 .wrap {
   height: 100%;
 }
-/* line 573, ../sass/common.scss */
+/* line 577, ../sass/common.scss */
 #section15 .wrap .title img {
   width: 40.3%;
 }
 
-/* line 582, ../sass/common.scss */
+/* line 586, ../sass/common.scss */
 #section16 {
   background-color: #76BD46 !important;
 }
-/* line 584, ../sass/common.scss */
+/* line 588, ../sass/common.scss */
 #section16 .wrap {
   height: 100%;
 }
-/* line 587, ../sass/common.scss */
+/* line 591, ../sass/common.scss */
 #section16 .wrap .title img {
   width: 40.3%;
 }
 
-/* line 596, ../sass/common.scss */
+/* line 600, ../sass/common.scss */
 #section17 {
   background-color: #f39834 !important;
 }
-/* line 598, ../sass/common.scss */
+/* line 602, ../sass/common.scss */
 #section17 .wrap {
   height: 100%;
 }
-/* line 601, ../sass/common.scss */
+/* line 605, ../sass/common.scss */
 #section17 .wrap .title img {
   width: 40.3%;
 }
 
-/* line 610, ../sass/common.scss */
+/* line 614, ../sass/common.scss */
 #section18 {
   background-color: #C81533 !important;
 }
-/* line 612, ../sass/common.scss */
+/* line 616, ../sass/common.scss */
 #section18 .wrap {
   height: 100%;
 }
-/* line 615, ../sass/common.scss */
+/* line 619, ../sass/common.scss */
 #section18 .wrap .title img {
   width: 40.3%;
 }
