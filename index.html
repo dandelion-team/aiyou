@@ -36,8 +36,8 @@
 	<script type="text/javascript">
 		$(document).ready(function() {
 		    // 首页图片效果
-            $('#homeImg').rotate3Di(20, 1000);
-			setTimeout(function() {$('#homeImg').rotate3Di(0, 1000);}, 800);
+            $('#homeImg').rotate3Di(20, 2000);
+			setTimeout(function() {$('#homeImg').rotate3Di(0, 2000);}, 800);
 			
 			// 十年成长效果
 			var rate = 1.2;
@@ -70,8 +70,8 @@
 				'afterLoad': function(anchorLink, index) {
 				    // 首页图片效果
 					if (index == 1) {
-                        $('#homeImg').rotate3Di(20, 1000);
-			            setTimeout(function() {$('#homeImg').rotate3Di(0, 1000);}, 800);
+                        $('#homeImg').rotate3Di(20, 2000);
+			            setTimeout(function() {$('#homeImg').rotate3Di(0, 2000);}, 800);
 					}
 			
 					// 花旋转效果
@@ -87,7 +87,7 @@
 					    $('.row01').animate({
                           opacity: 1,
                           left: '-170',
-                        }, "slow", function() {
+                        }, 1200, function() {
                           showB();
                         });
                         
@@ -95,7 +95,7 @@
                           $('.row02').animate({
                             opacity: 1,
                             left: '-170',
-                          }, "slow", function() {
+                          }, 1200, function() {
                             showC();
                           });
                         }
@@ -104,7 +104,7 @@
                           $('.row03').animate({
                             opacity: 1,
                             left: '-170',
-                          }, "slow", function() {
+                          }, 1200, function() {
                             showD();
                           });
                         }
@@ -112,7 +112,7 @@
                           $('.row04').animate({
                             opacity: 1,
                             left: '-170',
-                          }, "slow", function() {
+                          }, 1200, function() {
                           });
                         }
 					} else {
@@ -405,7 +405,7 @@
 
 </div>
 	
-	<script src="libs/charts/highcharts.js"></script>
+	<script src="libs/charts/highcharts.src.js"></script>
 	<script src="libs/charts/highcharts-more.js"></script>
 	
 </body>
