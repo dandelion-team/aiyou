@@ -401,11 +401,15 @@ body {
 }
 /* line 305, ../sass/common.scss */
 #section7 .wrap .main07 {
-  background: url("../imgs/in5-img01.png") no-repeat left top/80% auto;
-  height: 350px;
   position: relative;
+  text-align: left;
 }
-/* line 309, ../sass/common.scss */
+/* line 308, ../sass/common.scss */
+#section7 .wrap .main07 > img {
+  width: 80%;
+  height: auto;
+}
+/* line 312, ../sass/common.scss */
 #section7 .wrap .main07 .zz {
   bottom: 0;
   color: #fff;
@@ -417,7 +421,304 @@ body {
   line-height: 37px;
   padding: 2px 0;
 }
-/* line 320, ../sass/common.scss */
+/* line 323, ../sass/common.scss */
 #section7 .wrap .main07 .zz .zz-b {
   font-weight: bold;
+}
+/* line 327, ../sass/common.scss */
+#section7 .wrap .main07 .icon01 {
+  bottom: 3%;
+  left: 0;
+  position: absolute;
+  width: 11%;
+  z-index: 5;
+}
+/* line 333, ../sass/common.scss */
+#section7 .wrap .main07 .icon01 img {
+  width: 100%;
+}
+/* line 337, ../sass/common.scss */
+#section7 .wrap .main07 .icon02 {
+  left: 17%;
+  position: absolute;
+  top: 13%;
+  width: 17%;
+  z-index: 5;
+}
+/* line 343, ../sass/common.scss */
+#section7 .wrap .main07 .icon02 img {
+  width: 100%;
+}
+/* line 347, ../sass/common.scss */
+#section7 .wrap .main07 .icon03 {
+  bottom: 10%;
+  left: 26%;
+  position: absolute;
+  width: 15%;
+  z-index: 5;
+}
+/* line 353, ../sass/common.scss */
+#section7 .wrap .main07 .icon03 img {
+  width: 100%;
+}
+/* line 357, ../sass/common.scss */
+#section7 .wrap .main07 .icon04 {
+  bottom: 33%;
+  left: 47%;
+  position: absolute;
+  width: 10%;
+  z-index: 5;
+}
+/* line 363, ../sass/common.scss */
+#section7 .wrap .main07 .icon04 img {
+  width: 100%;
+}
+/* line 367, ../sass/common.scss */
+#section7 .wrap .main07 .icon05 {
+  left: 62%;
+  position: absolute;
+  top: 9%;
+  width: 18%;
+  z-index: 5;
+}
+/* line 373, ../sass/common.scss */
+#section7 .wrap .main07 .icon05 img {
+  width: 100%;
+}
+
+/* line 383, ../sass/common.scss */
+#section8 {
+  background-color: #44B9A3 !important;
+}
+/* line 385, ../sass/common.scss */
+#section8 .wrap {
+  height: 100%;
+}
+/* line 388, ../sass/common.scss */
+#section8 .wrap .title img {
+  width: 40%;
+}
+/* line 393, ../sass/common.scss */
+#section8 .wrap .main08 .left08 {
+  float: left;
+  width: 18.5%;
+  padding: 3% 7% 0 0;
+}
+/* line 397, ../sass/common.scss */
+#section8 .wrap .main08 .left08 img {
+  width: 100%;
+  height: auto;
+}
+/* line 402, ../sass/common.scss */
+#section8 .wrap .main08 .right08 {
+  float: left;
+  width: 46.5%;
+  position: relative;
+}
+/* line 408, ../sass/common.scss */
+#section8 .wrap .main08 .right08 > img {
+  width: 100%;
+  height: auto;
+}
+/* line 412, ../sass/common.scss */
+#section8 .wrap .main08 .right08 .yuan {
+  width: 22%;
+  position: absolute;
+}
+/* line 415, ../sass/common.scss */
+#section8 .wrap .main08 .right08 .yuan img {
+  width: 100%;
+  height: auto;
+}
+/* line 420, ../sass/common.scss */
+#section8 .wrap .main08 .right08 .yuan01 {
+  bottom: 38.7%;
+  left: 3.2%;
+  z-index: 3;
+}
+/* line 425, ../sass/common.scss */
+#section8 .wrap .main08 .right08 .yuan02 {
+  bottom: 64%;
+  left: 13.5%;
+  z-index: 3;
+}
+/* line 430, ../sass/common.scss */
+#section8 .wrap .main08 .right08 .yuan03 {
+  left: 38.8%;
+  top: 3.5%;
+  z-index: 3;
+}
+/* line 435, ../sass/common.scss */
+#section8 .wrap .main08 .right08 .yuan04 {
+  right: 14%;
+  top: 14%;
+  z-index: 3;
+}
+/* line 440, ../sass/common.scss */
+#section8 .wrap .main08 .right08 .yuan05 {
+  bottom: 38.7%;
+  right: 3.4%;
+  z-index: 3;
+}
+/* line 445, ../sass/common.scss */
+#section8 .wrap .main08 .right08 .yuan06 {
+  bottom: 13.4%;
+  right: 13.8%;
+  z-index: 3;
+}
+/* line 450, ../sass/common.scss */
+#section8 .wrap .main08 .right08 .yuan07 {
+  bottom: 3.5%;
+  left: 39%;
+  z-index: 3;
+}
+/* line 455, ../sass/common.scss */
+#section8 .wrap .main08 .right08 .yuan08 {
+  bottom: 13.4%;
+  left: 13.8%;
+  z-index: 3;
+}
+
+/* line 467, ../sass/common.scss */
+#section9 {
+  background-color: #76BD46 !important;
+}
+/* line 469, ../sass/common.scss */
+#section9 .wrap {
+  height: 100%;
+}
+/* line 472, ../sass/common.scss */
+#section9 .wrap .title img {
+  width: 23.5%;
+}
+/* line 477, ../sass/common.scss */
+#section9 .wrap .main09 .left09 {
+  float: left;
+  width: 18.5%;
+}
+/* line 480, ../sass/common.scss */
+#section9 .wrap .main09 .left09 img {
+  width: 100%;
+  height: auto;
+}
+/* line 485, ../sass/common.scss */
+#section9 .wrap .main09 .right09 {
+  float: right;
+}
+
+/* line 494, ../sass/common.scss */
+#section10 {
+  background-color: #F39935 !important;
+}
+/* line 496, ../sass/common.scss */
+#section10 .wrap {
+  height: 100%;
+}
+/* line 499, ../sass/common.scss */
+#section10 .wrap .title img {
+  width: 40.3%;
+}
+
+/* line 508, ../sass/common.scss */
+#section11 {
+  background-color: #21303d !important;
+}
+/* line 510, ../sass/common.scss */
+#section11 .wrap {
+  height: 100%;
+}
+/* line 513, ../sass/common.scss */
+#section11 .wrap .title img {
+  width: 40.3%;
+}
+
+/* line 522, ../sass/common.scss */
+#section12 {
+  background-color: #44B9A3 !important;
+}
+/* line 524, ../sass/common.scss */
+#section12 .wrap {
+  height: 100%;
+}
+/* line 527, ../sass/common.scss */
+#section12 .wrap .title img {
+  width: 40.3%;
+}
+
+/* line 536, ../sass/common.scss */
+#section13 {
+  background-color: #76BD46 !important;
+}
+/* line 538, ../sass/common.scss */
+#section13 .wrap {
+  height: 100%;
+}
+/* line 541, ../sass/common.scss */
+#section13 .wrap .title img {
+  width: 40.3%;
+}
+
+/* line 550, ../sass/common.scss */
+#section14 {
+  background-color: #f39834 !important;
+}
+/* line 552, ../sass/common.scss */
+#section14 .wrap {
+  height: 100%;
+}
+/* line 555, ../sass/common.scss */
+#section14 .wrap .title img {
+  width: 40.3%;
+}
+
+/* line 564, ../sass/common.scss */
+#section15 {
+  background-color: #22313C !important;
+}
+/* line 566, ../sass/common.scss */
+#section15 .wrap {
+  height: 100%;
+}
+/* line 569, ../sass/common.scss */
+#section15 .wrap .title img {
+  width: 40.3%;
+}
+
+/* line 578, ../sass/common.scss */
+#section16 {
+  background-color: #76BD46 !important;
+}
+/* line 580, ../sass/common.scss */
+#section16 .wrap {
+  height: 100%;
+}
+/* line 583, ../sass/common.scss */
+#section16 .wrap .title img {
+  width: 40.3%;
+}
+
+/* line 592, ../sass/common.scss */
+#section17 {
+  background-color: #f39834 !important;
+}
+/* line 594, ../sass/common.scss */
+#section17 .wrap {
+  height: 100%;
+}
+/* line 597, ../sass/common.scss */
+#section17 .wrap .title img {
+  width: 40.3%;
+}
+
+/* line 606, ../sass/common.scss */
+#section18 {
+  background-color: #C81533 !important;
+}
+/* line 608, ../sass/common.scss */
+#section18 .wrap {
+  height: 100%;
+}
+/* line 611, ../sass/common.scss */
+#section18 .wrap .title img {
+  width: 40.3%;
 }

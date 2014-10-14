@@ -303,9 +303,12 @@ body {
 			}
 		  }
 		  .main07 {
-		    background: url("../imgs/in5-img01.png") no-repeat left top / 80% auto;
-			height: 350px;
 			position: relative;
+			text-align: left;
+			>img {
+			  width: 80%;
+			  height: auto;
+			}
 			.zz {
 			  bottom: 0;
 			  color: #fff;
@@ -321,9 +324,298 @@ body {
 			     font-weight: bold;
 			  }
 			}
+			.icon01 {
+			  bottom: 3%;
+			  left: 0;
+			  position: absolute;
+			  width: 11%;
+			  z-index: 5;
+			  img {
+			    width: 100%;
+			  }
+			}
+			.icon02 {
+			  left: 17%;
+			  position: absolute;
+			  top: 13%;
+			  width: 17%;
+			  z-index: 5;
+			  img {
+			    width: 100%;
+			  }
+			}
+			.icon03 {
+			  bottom: 10%;
+			  left: 26%;
+			  position: absolute;
+			  width: 15%;
+			  z-index: 5;
+			  img {
+			    width: 100%;
+			  }
+			}
+			.icon04 {
+			  bottom: 33%;
+			  left: 47%;
+			  position: absolute;
+			  width: 10%;
+			  z-index: 5;
+			  img {
+			    width: 100%;
+			  }
+			}
+			.icon05 {
+			  left: 62%;
+			  position: absolute;
+			  top: 9%;
+			  width: 18%;
+			  z-index: 5;
+			  img {
+			    width: 100%;
+			  }
+			}
 		  }
 		}
 }
+
+// section8
+	
+#section8 {
+	    background-color: #44B9A3 !important;
+		.wrap {
+	      height: 100%;
+          .title {
+		    img {
+			  width: 40%;
+			}
+		  }
+		  .main08 {
+		    .left08 {
+			  float: left;
+			  width: 18.5%;
+			  padding: 3% 7% 0 0;
+			  img {
+			    width: 100%;
+				height: auto;
+			  }
+			}
+			.right08 {
+			  float: left;
+			  width: 46.5%;
+			  position: relative;
+			 // background: url("../imgs/in6-r-img.png") no-repeat bottom right/100% auto;
+			  
+			  >img {
+			    width: 100%;
+				height: auto;
+			  }
+			  .yuan {
+			    width: 22%;
+				position: absolute;
+				img {
+				  width: 100%;
+				  height: auto;
+				}
+			  }
+			  .yuan01 {
+			    bottom: 38.7%;
+			    left: 3.2%;
+				z-index: 3;
+			  }
+			  .yuan02 {
+			    bottom: 64%;
+			    left: 13.5%;
+				z-index: 3;
+			  }
+			  .yuan03 {
+			    left: 38.8%;
+			    top: 3.5%;
+				z-index: 3;
+			  }
+			  .yuan04 {
+			    right: 14%;
+			    top: 14%;
+				z-index: 3;
+			  }
+			  .yuan05 {
+			    bottom: 38.7%;
+			    right: 3.4%;
+				z-index: 3;
+			  }
+			  .yuan06 {
+			    bottom: 13.4%;
+			    right: 13.8%;
+				z-index: 3;
+			  }
+			  .yuan07 {
+			    bottom: 3.5%;
+			    left: 39%;
+				z-index: 3;
+			  }
+			  .yuan08 {
+			    bottom: 13.4%;
+			    left: 13.8%;
+				z-index: 3;
+			  }
+			}
+		  }
+		}
+}
+
+// section9
+	
+#section9 {
+	    background-color: #76BD46 !important;
+		.wrap {
+	      height: 100%;
+          .title {
+		    img {
+			  width: 23.5%;
+			}
+		  }
+		  .main09 {
+		    .left09 {
+			  float: left;
+			  width: 18.5%;
+			  img {
+			    width: 100%;
+				height: auto;
+			  }
+			}
+			.right09 {
+			  float: right;
+			}
+		  }
+		}
+}
+
+// section10
+	
+#section10 {
+	    background-color: #F39935 !important;
+		.wrap {
+	      height: 100%;
+          .title {
+		    img {
+			  width: 40.3%;
+			}
+		  }
+		}
+}
+
+// section11
+	
+#section11 {
+	    background-color: #21303d !important;
+		.wrap {
+	      height: 100%;
+          .title {
+		    img {
+			  width: 40.3%;
+			}
+		  }
+		}
+}
+
+// section12
+	
+#section12 {
+	    background-color: #44B9A3 !important;
+		.wrap {
+	      height: 100%;
+          .title {
+		    img {
+			  width: 40.3%;
+			}
+		  }
+		}
+}
+
+// section13
+	
+#section13 {
+	    background-color: #76BD46 !important;
+		.wrap {
+	      height: 100%;
+          .title {
+		    img {
+			  width: 40.3%;
+			}
+		  }
+		}
+}
+
+// section14
+	
+#section14 {
+	    background-color: #f39834 !important;
+		.wrap {
+	      height: 100%;
+          .title {
+		    img {
+			  width: 40.3%;
+			}
+		  }
+		}
+}
+
+// section15
+	
+#section15 {
+	    background-color: #22313C !important;
+		.wrap {
+	      height: 100%;
+          .title {
+		    img {
+			  width: 40.3%;
+			}
+		  }
+		}
+}
+
+// section16
+	
+#section16 {
+	    background-color: #76BD46 !important;
+		.wrap {
+	      height: 100%;
+          .title {
+		    img {
+			  width: 40.3%;
+			}
+		  }
+		}
+}
+
+// section17
+	
+#section17 {
+	    background-color: #f39834 !important;
+		.wrap {
+	      height: 100%;
+          .title {
+		    img {
+			  width: 40.3%;
+			}
+		  }
+		}
+}
+
+// section18
+	
+#section18 {
+	    background-color: #C81533 !important;
+		.wrap {
+	      height: 100%;
+          .title {
+		    img {
+			  width: 40.3%;
+			}
+		  }
+		}
+}
+		  
+		  
 
 
 
