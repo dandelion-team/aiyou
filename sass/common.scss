@@ -509,10 +509,11 @@ body {
 			}
 		  }
 		  .main10 {
+		    position: relative;
 		    .left10 {
-			  float: left;
+			  bottom: 10%;
+			  position: absolute;
 			  width: 18.5%;
-			  padding-right: 15%;
 			  img {
 			    width: 100%;
 				height: auto;
@@ -521,6 +522,7 @@ body {
 			.right10 {
 			  float: left;
 			  width: 46.1%;
+			  margin-left: 18.5%;
 			  //background: url("../imgs/in8-r-bg-bak.png") no-repeat bottom right/100% auto;
 			  width: 59.2%;
 			  position: relative;
