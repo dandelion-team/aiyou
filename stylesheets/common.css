@@ -160,7 +160,7 @@ body {
     /*background: -moz-linear-gradient(left, #7ac23c, #33a96d); !important;
 	background: -o-linear-gradient(top,#7ac23c, #33a96d);  !important;
 	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#7ac23c), to(#33a96d));  !important;*/
-  background-color: #866527 !important;
+  background-color: #76BD46 !important;
 }
 /* line 88, ../sass/common.scss */
 #section2 .wrap {
@@ -169,7 +169,7 @@ body {
 /* line 90, ../sass/common.scss */
 #section2 .wrap .title01 {
   text-align: center;
-  padding-top: 15%;
+  padding-top: 40%;
   margin: 0 auto;
   clear: both;
 }
@@ -214,7 +214,7 @@ body {
 
 /* line 134, ../sass/common.scss */
 #section3 {
-  background-color: #d1ce22 !important;
+  background-color: #22313C !important;
 }
 /* line 136, ../sass/common.scss */
 #section3 .wrap {
@@ -222,7 +222,7 @@ body {
 }
 /* line 139, ../sass/common.scss */
 #section3 .wrap .title img {
-  width: 25%;
+  width: 24%;
 }
 /* line 143, ../sass/common.scss */
 #section3 .wrap .main03 {
@@ -278,21 +278,21 @@ body {
 /* line 184, ../sass/common.scss */
 #section3 .wrap .main03 .box08 img {
   margin-left: 3%;
-  width: 81%;
+  width: 81.5%;
 }
 
 /* line 195, ../sass/common.scss */
 #section4 {
-  background-color: #ce8818 !important;
+  background-color: #44B9A3 !important;
 }
 /* line 198, ../sass/common.scss */
 #section4 .title img {
-  width: 25%;
+  width: 24%;
 }
 /* line 202, ../sass/common.scss */
 #section4 .main04 {
   width: 59.6%;
-  background-color: #efcf52;
+  background: url("../imgs/in2-bg.png") repeat bottom center transparent !important;
   border-radius: 5px;
   margin: 0 0 0 17.8%;
   padding: 2% 0;
@@ -304,7 +304,7 @@ body {
   position: absolute;
   right: 6%;
   top: 20%;
-  width: 24%;
+  width: 23%;
 }
 /* line 216, ../sass/common.scss */
 #section4 .main04 .text img {
@@ -325,11 +325,11 @@ body {
 
 /* line 236, ../sass/common.scss */
 #section5 {
-  background-color: #22566c !important;
+  background-color: #76bd46 !important;
 }
 /* line 239, ../sass/common.scss */
 #section5 .title img {
-  width: 40.4%;
+  width: 40%;
 }
 /* line 243, ../sass/common.scss */
 #section5 .main05 {
@@ -338,7 +338,7 @@ body {
 }
 /* line 246, ../sass/common.scss */
 #section5 .main05 .left05 {
-  width: 24.3%;
+  width: 36.7%;
   float: left;
   padding: 0.5% 0 3.2%;
 }
@@ -356,7 +356,7 @@ body {
 
 /* line 265, ../sass/common.scss */
 #section6 {
-  background-color: #7bac44 !important;
+  background-color: #f39834 !important;
 }
 /* line 268, ../sass/common.scss */
 #section6 .title img {
@@ -403,9 +403,21 @@ body {
 #section7 .wrap .main07 {
   background: url("../imgs/in5-img01.png") no-repeat top center;
   height: 350px;
-}
-/* line 308, ../sass/common.scss */
-#section7 .wrap .main07 .zz {
   position: relative;
-  left: 0;
+}
+/* line 309, ../sass/common.scss */
+#section7 .wrap .main07 .zz {
+  bottom: 0;
+  color: #fff;
+  font-size: 30px;
+  position: absolute;
+  right: 13%;
+  border-top: 4px solid #fff;
+  border-bottom: 4px solid #fff;
+  line-height: 37px;
+  padding: 2px 0;
+}
+/* line 320, ../sass/common.scss */
+#section7 .wrap .main07 .zz .zz-b {
+  font-weight: bold;
 }
