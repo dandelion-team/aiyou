@@ -74,14 +74,32 @@
 			            setTimeout(function() {$('#homeImg').rotate3Di(0, 2000);}, 800);
 					}
 			
-					// 花旋转效果
+					// 给生命一次机会
 					if (index == 2) {
-					    index2Times += 1;
-					    if (index2Times == 1) {
-					        rotate(".flower02");
-						    setTimeout(dictateRotate, 800);
-						}
-					}					
+						$('.title01').animate({
+                          opacity: 1,
+                          bottom: 0,
+                        }, 1200);
+					} else {
+					    $('.title01').css("bottom", "-500px").css("opacity", 0);
+					}
+					
+					// 爱佑十年成长（1）
+					if (index == 3) {
+					    $('.box08').animate({
+                          opacity: 1,
+                          left: 0,
+                        }, 1200, function(){
+					      $('.img-box').animate({
+                            opacity: 1,
+                            bottom: 0,
+                          }, 1200);
+						});
+					} else {
+					    $('.box08').css("left", "-500px").css("opacity", 0);
+					    $('.img-box').css("bottom", "-500px").css("opacity", 0);
+					}
+					
 					// 爱佑十年成长（2）
 					if (index == 4) {
 					    $('.row01').animate({
@@ -266,7 +284,7 @@
 
 <div id="fullpage">
    
-	 <!-- 首页 -->
+	<!-- 首页 -->
 	<div class="section" id="section1">		  
 		<div class="wrap">
 		   <div class="main01"><img id="homeImg" src="imgs/01.png"></div>
@@ -276,71 +294,40 @@
 	       </div>
 		</div>
 	</div>
-	<!-- 第二页 花朵-->
+	
+	<!-- 第二页 给生命一次机会 -->
 	<div class="section" id="section2">
 		<div class="wrap">
-		      <div class="title01"><img src="imgs/title001.png"></div>
-			 <!-- <div id="flower">
-			    <div class="flower01">
-				  <img src="imgs/flower-t01.png">
-				</div>
-				<div class="flower02">
-				  <img src="imgs/flower-t02.png">
-				</div>
-				<div class="flower03">
-				  <img src="imgs/flower-t03.png">
-				</div>
-				<div class="flower04">
-				  <img src="imgs/flower-t04.png">
-				</div>
-				<div class="clear"></div>
-			  </div>
-			  <div class="clear"></div>-->
+		    <div class="title01" style="opacity: 0; bottom: -500px; position: relative;"><img src="imgs/title001.png"></div>
 		</div>
 	</div>
-	<!-- 第三页 爱佑十年成长 -->
+	
+	<!-- 第三页 爱佑十年成长（1） -->
 	<div class="section" id="section3">
 		<div class="wrap">
 			<div class="title">
 			    <img src="imgs/page-title001.png">
 			</div>
 			<div class="main03">
-			    
-				 <img class="growTooltip box01" src="imgs/001.png">
-				
-				
-				
-				  <img class="growTooltip box02" src="imgs/002.png">
-				
-				
-				
-				 <img class="growTooltip box03" src="imgs/003.png">
-				
-				
-				
-				 <img class="growTooltip box04" src="imgs/004.png">
-				
-				
-				
-				 <img class="growTooltip box05" src="imgs/005.png">
-				
-				
-				
-				 <img class="growTooltip box06" src="imgs/006.png">
-				
-				
-				
-				 <img class="growTooltip box07" src="imgs/007.png">
+			     <div class="img-box" style="opacity: 0; bottom: -200px; position: relative;" >
+				     <img class="growTooltip box01" src="imgs/001.png">		
+				     <img class="growTooltip box02" src="imgs/002.png">
+				     <img class="growTooltip box03" src="imgs/003.png">
+				     <img class="growTooltip box04" src="imgs/004.png">
+				     <img class="growTooltip box05" src="imgs/005.png">
+				     <img class="growTooltip box06" src="imgs/006.png">
+				     <img class="growTooltip box07" src="imgs/007.png">
+				 </div>
 				 <div class="clear"></div>
 				
-				<div class="box08">
-				 <img src="imgs/009.png">
+				<div class="box08" style="opacity: 0; left: -200px; position: relative;">
+				    <img src="imgs/009.png">
 				</div>
-				
 			</div>
 		</div>
 	</div>
-	<!-- 第四页 爱佑十年成长二 -->
+	
+	<!-- 第四页 爱佑十年成长（2） -->
 	<div class="section" id="section4">
 		<div class="wrap">
 			<div class="title">
