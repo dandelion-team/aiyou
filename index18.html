@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>爱佑慈善基金会</title>
+	<meta name="author" content="爱佑慈善基金会" />
+	<meta name="description" content="爱佑慈善基金会" />
+	<meta name="keywords"  content="爱佑慈善基金会" />
+	<meta name="Resource-type" content="Document" />
+
+	<link rel="stylesheet" type="text/css" href="libs/jquery.fullPage.css" />
+	<link rel="stylesheet" type="text/css" href="examples.css" />
+	<link type="text/css" rel="stylesheet" href="stylesheets/desktop.css" media="only screen and (max-width:1800px)" />
+    <link type="text/css" rel="stylesheet" href="stylesheets/led.css" media="only screen and (min-width:1801px)" />
+    <link type="text/css" rel="stylesheet" href="stylesheets/print.css" media="print" />
+<!--[if IE]>
+  <link type="text/css" rel="stylesheet" href="stylesheets/ie.css" media="screen" />
+<![endif]-->
+
+	<!--[if IE]>
+		<script type="text/javascript">
+			 var console = { log: function() {} };
+		</script>
+	<![endif]-->
+
+	<script src="libs/jquery.min.js"></script>
+	<script src="libs/jquery-ui.min.js"></script>
+
+	<script type="text/javascript" src="libs/jquery.fullPage.js"></script>
+	<script src="libs/jquery.easing.1.3.js"></script>
+    <script src="libs/jQueryRotateCompressed.js"></script>
+    <script type="text/javascript" src="libs/jquery-css-transform.js"></script>
+    <script type="text/javascript" src="libs/rotate3Di.js"></script>
+
+	<script type="text/javascript">
+		$(document).ready(function() {
+		    // 首页图片效果
+            $('#homeImg').rotate3Di(20, 2000);
+			setTimeout(function() {$('#homeImg').rotate3Di(0, 2000);}, 800);
+			
+			// 十年成长效果
+			var rate = 1.2;
+			$('.growTooltip').mouseenter(function() {
+                $(this).animate({
+                    width: $(this).width()*rate,
+					height: $(this).height()*rate,
+                }, 0, 'easeInOutCirc', function() {
+                });
+            });
+            
+            $('.growTooltip').mouseleave(function() {
+                $(this).animate({
+                    width: $(this).width()/rate,
+					height: $(this).height()/rate,
+                }, 0, 'easeInOutCirc', function() {
+                });
+            });
+			
+			var index2Times = 0;
+			
+			$('#fullpage').fullpage({
+				'verticalCentered': false,
+				'css3': true,
+				'sectionsColor': ['#F0F2F4', '#fff', '#fff'],
+				'navigation': true,
+				'navigationPosition': 'right',
+				'navigationTooltips': [ '十年绽放', '给生命一次机会', '1、爱佑十年成长', '2、爱佑十年成长', '3、爱佑童心', '4、爱佑童心（医院）'],
+
+				'afterLoad': function(anchorLink, index) {
+				    // 首页图片效果
+					if (index == 1) {
+                        $('#homeImg').rotate3Di(20, 2000);
+			            setTimeout(function() {$('#homeImg').rotate3Di(0, 2000);}, 800);
+					}
+			
+					// 花旋转效果
+					if (index == 2) {
+					   /*
+					    index2Times += 1;
+					    if (index2Times == 1) {
+					        rotate(".flower02");
+						    setTimeout(dictateRotate, 800);
+						}
+						*/
+						$('.title01').animate({
+                          opacity: 1,
+                          bottom: 0,
+                        }, 1200);
+					} else {
+					    $('.title01').css("bottom", "-200px").css("opacity", 0);
+					}
+					
+					// 爱佑十年成长（2）
+					if (index == 4) {
+					    $('.row01').animate({
+                          opacity: 1,
+                          left: '-170',
+                        }, 1200, function() {
+                          showB();
+                        });
+                        
+                        function showB() {
+                          $('.row02').animate({
+                            opacity: 1,
+                            left: '-170',
+                          }, 1200, function() {
+                            showC();
+                          });
+                        }
+                        
+                        function showC() {
+                          $('.row03').animate({
+                            opacity: 1,
+                            left: '-170',
+                          }, 1200, function() {
+                            showD();
+                          });
+                        }
+                        function showD() {
+                          $('.row04').animate({
+                            opacity: 1,
+                            left: '-170',
+                          }, 1200, function() {
+                          });
+                        }
+					} else {
+					    $('.row01').css("left", "-746px").css("opacity", 0);
+						$('.row02').css("left", "-746px").css("opacity", 0);
+						$('.row03').css("left", "-746px").css("opacity", 0);
+						$('.row04').css("left", "-746px").css("opacity", 0);
+					}
+					
+					// 爱佑童心
+					if (index == 5) {
+                        $('.right05').highcharts({
+                            chart: {
+                                type: 'column',
+								backgroundColor: 'transparent',
+								borderColor: '#ffffff',
+                            },
+                            title: {
+                                text: ''
+                            },
+                            subtitle: {
+                                text: ''
+                            },
+                            xAxis: {
+                                type: 'category',
+								labels: {
+								    style: {
+	                                    color: '#ffffff',
+                                    }
+								}
+								,
+								lineWidth: 1,
+								lineColor: '#ffffff',minorGridLineWidth: 0,
+                            },
+                            yAxis: {
+							    stackLabels: {enabled: true,},
+                                min: 0,
+                                title: {
+                                    text: ''
+                                },
+								labels: {
+								    step: 1,
+								    style: {
+	                                    color: '#ffffff',
+                                    }
+								},
+								gridLineColor: 'transparent',
+								lineWidth: 1,
+								lineColor: '#ffffff',
+                             },
+        	    	         tooltip: {
+                                valueSuffix: '人'
+                             },
+                             legend: {
+                                enabled: false
+                             },
+                             series: [{
+							    name: '数量',
+                                data: [
+                                    ['2006', 139],
+                                    ['2007', 1068],
+                                    ['2008', 1335],
+                                    ['2009', 2067],
+                                    ['2010', 2990],
+                                    ['2011', 3952],
+                                    ['2012', 4591],
+                                    ['2013', 4608],
+                                    ['2014', 4591]
+                                ],
+                                dataLabels: {
+								   color: '#ffffff',
+                                   enabled: true,
+                                   align: 'right',
+                                   x: 10
+                                },
+								color: '#fff342',
+                             }],
+							credits: {
+							    enabled: false,
+							},
+							navigation: {
+							    buttonOptions: {
+								    enabled: false,
+								}
+							}
+                         });
+					}
+					
+					// 爱佑童心（定点医院）
+					if (index == 6) {
+					    $('.right06').highcharts({
+                            chart: {
+                                type: 'bubble',
+                                zoomType: 'xy',
+								backgroundColor: 'transparent',
+                            },
+                            title: {
+                                text: ''
+                            },
+                            xAxis: {
+							    gridLineColor: '#000000',
+                            },
+							yAxis: {
+							    stackLabels: {enabled: true,},
+                                min: 0,
+                                title: {
+                                    text: ''
+                                },
+								gridLineColor: 'transparent',
+								lineWidth: 1,
+							},
+							credits: {
+							    enabled: false,
+							},
+                            legend: {
+                                enabled: false
+                            },
+                            series: [{
+                                data: [[2006, 3, 3], [2007, 6, 6], [2008, 8, 8], [2009, 9, 9], [2010, 19, 19], [2011, 31, 31], [2012, 36, 36], [2013, 54, 54]],
+                                dataLabels: {
+								   color: '#44B9A3',
+                                   enabled: true,
+                                },
+                            }]
+                        });
+					}
+				},
+
+				'onLeave': function(index, nextIndex, direction) {
+				}
+			});
+			
+			function dictateRotate() {
+			    rotate(".flower01");
+				rotate(".flower03");
+				rotate(".flower04");
+			}
+			
+			function rotate(objID) {
+                var angle = 0;
+                setInterval(function() {
+                  angle += 3;
+                  $(objID).rotate(angle);
+                }, 50);
+            }
+		});
+	</script>
+
+</head>
+<body>
+
+<div id="fullpage">
+   
+	 <!-- 首页 -->
+	<div class="section" id="section1">		  
+		<div class="wrap">
+		   <div class="main01"><img id="homeImg" src="imgs/01.png"></div>
+		   <div class="logo">
+			     <div class="logo01"><img src="imgs/logo.png"></div>
+				 <div class="heart"><img src="imgs/heart.png"></div>
+	       </div>
+		</div>
+	</div>
+	<!-- 第二页 花朵-->
+	<div class="section" id="section2">
+		<div class="wrap">
+		      <div class="title01" style="opacity: 0; bottom: -200px;position: relative;"><img src="imgs/title001.png"></div>
+			 <!-- <div id="flower">
+			    <div class="flower01">
+				  <img src="imgs/flower-t01.png">
+				</div>
+				<div class="flower02">
+				  <img src="imgs/flower-t02.png">
+				</div>
+				<div class="flower03">
+				  <img src="imgs/flower-t03.png">
+				</div>
+				<div class="flower04">
+				  <img src="imgs/flower-t04.png">
+				</div>
+				<div class="clear"></div>
+			  </div>
+			  <div class="clear"></div>-->
+		</div>
+	</div>
+	<!-- 第三页 爱佑十年成长 -->
+	<div class="section" id="section3">
+		<div class="wrap">
+			<div class="title">
+			    <img src="imgs/page-title001.png">
+			</div>
+			<div class="main03">
+			    
+				 <img class="growTooltip box01" src="imgs/001.png">
+				
+				
+				
+				  <img class="growTooltip box02" src="imgs/002.png">
+				
+				
+				
+				 <img class="growTooltip box03" src="imgs/003.png">
+				
+				
+				
+				 <img class="growTooltip box04" src="imgs/004.png">
+				
+				
+				
+				 <img class="growTooltip box05" src="imgs/005.png">
+				
+				
+				
+				 <img class="growTooltip box06" src="imgs/006.png">
+				
+				
+				
+				 <img class="growTooltip box07" src="imgs/007.png">
+				 <div class="clear"></div>
+				
+				<div class="box08">
+				 <img src="imgs/009.png">
+				</div>
+				
+			</div>
+		</div>
+	</div>
+	<!-- 第四页 爱佑十年成长二 -->
+	<div class="section" id="section4">
+		<div class="wrap">
+			<div class="title">
+			    <img src="imgs/page-title002.png">
+			</div>
+			<div class="main04">
+				<div class="row01"><img src="imgs/img002.png"></div>
+				<div class="row02"><img src="imgs/img003.png"></div>
+				<div class="row03"><img src="imgs/img004.png"></div>
+				<div class="row04"><img src="imgs/img005.png"></div>
+				<div class="text"><img src="imgs/img006.png"></div>
+			</div>
+		</div>
+	</div>
+	
+
+	<!-- 第五页 爱佑童心 -->
+	<div class="section" id="section5">
+		<div class="wrap">
+			<div class="title">
+			    <img src="imgs/page-title003.png">
+			</div>
+			<div class="main05">
+			    <div class="left05">
+				  <img src="imgs/in3-img.png">
+				</div>
+				<div class="right05"></div>
+				<div class="clear"></div>
+			</div>
+		</div>
+	</div>
+	
+
+	
+	
+
+</div>
+	
+	<script src="libs/charts/highcharts.src.js"></script>
+	<script src="libs/charts/highcharts-more.js"></script>
+	
+</body>
+</html>
