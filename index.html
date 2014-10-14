@@ -146,7 +146,7 @@
                             chart: {
                                 type: 'column',
 								backgroundColor: 'transparent',
-								borderColor: '#ffffff',
+								borderColor: '#FFF',
                             },
                             title: {
                                 text: ''
@@ -158,12 +158,12 @@
                                 type: 'category',
 								labels: {
 								    style: {
-	                                    color: '#ffffff',
+	                                    color: '#FFF',
                                     }
 								}
 								,
 								lineWidth: 1,
-								lineColor: '#ffffff',minorGridLineWidth: 0,
+								lineColor: '#FFF',minorGridLineWidth: 0,
                             },
                             yAxis: {
 							    stackLabels: {enabled: true,},
@@ -174,12 +174,12 @@
 								labels: {
 								    step: 1,
 								    style: {
-	                                    color: '#ffffff',
+	                                    color: '#FFF',
                                     }
 								},
 								gridLineColor: 'transparent',
 								lineWidth: 1,
-								lineColor: '#ffffff',
+								lineColor: '#FFF',
                              },
         	    	         tooltip: {
                                 valueSuffix: '人'
@@ -201,7 +201,7 @@
                                     ['2014', 4591]
                                 ],
                                 dataLabels: {
-								   color: '#ffffff',
+								   color: '#FFF',
                                    enabled: true,
                                    align: 'right',
                                    x: 10
@@ -231,16 +231,34 @@
                                 text: ''
                             },
                             xAxis: {
-							    gridLineColor: '#000000',
+							    categories: [],
+								labels: {
+								    step: 1,
+								    style: {
+	                                    color: '#FFF',
+                                    }
+								},
+								gridLineWidth: 1,
+								gridLineColor: '#FFF',
+								gridLineDashStyle: 'Dot',
+								lineColor: '#FFF',
                             },
 							yAxis: {
-							    stackLabels: {enabled: true,},
+							    categories: [],
                                 min: 0,
+								max: 60,
                                 title: {
                                     text: ''
                                 },
 								gridLineColor: 'transparent',
 								lineWidth: 1,
+								lineColor: '#FFF',
+								labels: {
+								    step: 10,
+								    style: {
+	                                    color: '#FFF',
+                                    }
+								}
 							},
 							credits: {
 							    enabled: false,
@@ -251,14 +269,115 @@
                             series: [{
                                 data: [[2006, 3, 3], [2007, 6, 6], [2008, 8, 8], [2009, 9, 9], [2010, 19, 19], [2011, 31, 31], [2012, 36, 36], [2013, 54, 54]],
                                 dataLabels: {
-								   color: '#44B9A3',
+								   color: '#FFF',
                                    enabled: true,
                                 },
                             }]
                         });
 					}
+					
+					// 爱佑童心（项目实施流程）
+					if (index == 7) {
+					    //$("#track").fadeIn(2000);
+					}
+					
+					// 爱佑童心（联合救助网络）
+					if (index == 8) {
+						$(".yuan01").fadeIn(1000, function(){});
+                        setTimeout(function(){$(".yuan02").fadeIn(1000);}, 800);
+                        setTimeout(function(){$(".yuan03").fadeIn(1000);}, 1600);
+						setTimeout(function(){$(".yuan04").fadeIn(1000);}, 2400);
+						setTimeout(function(){$(".yuan05").fadeIn(1000);}, 3200);
+						setTimeout(function(){$(".yuan06").fadeIn(1000);}, 4000);
+						setTimeout(function(){$(".yuan07").fadeIn(1000);}, 4800);
+						setTimeout(function(){$(".yuan08").fadeIn(1000);}, 5600);
+					} else {
+					    $(".yuan").css("display", 'none');
+					}
+					
+					// 爱佑童心（潜入式养护中心）
+					if (index == 10) {
+					   /*
+                        $('.rain01').animate({
+                          top: '200px',
+                        }, 1200, function() {
+                        });
+						*/
+					} else {
+					    
+					}
+					
+					// 公益创投
+					if (index == 13) {
+					    $('.main13').highcharts({
+                            chart: {
+                                type: 'area',
+								backgroundColor: 'transparent',
+                            },
+                            title: {
+                                text: ''
+                            },
+                            subtitle: {
+                                text: ''
+                            },
+                            xAxis: {
+                                allowDecimals: false,
+                                labels: {
+                                    formatter: function () {
+                                        return this.value; // clean, unformatted number for year
+                                    }
+                                }
+                            },
+                            yAxis: {
+                                title: {
+                                    text: 'Nuclear weapon states'
+                                },
+                                labels: {
+                                    formatter: function () {
+                                        return this.value / 1000 + 'k';
+                                    }
+                                }
+                            },
+                            tooltip: {
+                                pointFormat: '{series.name} produced <b>{point.y:,.0f}</b><br/>warheads in {point.x}'
+                            },
+                            plotOptions: {
+                                area: {
+                                    pointStart: 1940,
+                                    marker: {
+                                        enabled: false,
+                                        symbol: 'circle',
+                                        radius: 2,
+                                        states: {
+                                            hover: {
+                                                enabled: true
+                                            }
+                                        }
+                                    }
+                                }
+                            },
+                            series: [{
+                                name: 'USA',
+                                data: [null, null, null, null, null, 6, 11, 32, 110, 235, 369, 640,
+                                    1005, 1436, 2063, 3057, 4618, 6444, 9822, 15468, 20434, 24126,
+                                    27387, 29459, 31056, 31982, 32040, 31233, 29224, 27342, 26662,
+                                    26956, 27912, 28999, 28965, 27826, 25579, 25722, 24826, 24605,
+                                    24304, 23464, 23708, 24099, 24357, 24237, 24401, 24344, 23586,
+                                    22380, 21004, 17287, 14747, 13076, 12555, 12144, 11009, 10950,
+                                    10871, 10824, 10577, 10527, 10475, 10421, 10358, 10295, 10104]
+                            }, {
+                                name: 'USSR/Russia',
+                                data: [null, null, null, null, null, null, null, null, null, null,
+                                    5, 25, 50, 120, 150, 200, 426, 660, 869, 1060, 1605, 2471, 3322,
+                                    4238, 5221, 6129, 7089, 8339, 9399, 10538, 11643, 13092, 14478,
+                                    15915, 17385, 19055, 21205, 23044, 25393, 27935, 30062, 32049,
+                                    33952, 35804, 37431, 39197, 45000, 43000, 41000, 39000, 37000,
+                                    35000, 33000, 31000, 29000, 27000, 25000, 24000, 23000, 22000,
+                                    21000, 20000, 19000, 18000, 18000, 17000, 16000]
+                            }]
+                        });
+                    }
 				},
-
 				'onLeave': function(index, nextIndex, direction) {
 				}
 			});
@@ -376,14 +495,14 @@
 		</div>
 	</div>
 	
-	<!-- 第七页 爱佑童心 -->
+	<!-- 第七页 爱佑童心（项目实施流程）-->
 	<div class="section" id="section7">
 		<div class="wrap">
 			<div class="title">
 			    <img src="imgs/page-title005.png">
 			</div>
 			<div class="main07">
-			    <img src="imgs/in5-img01.png">
+			    <img id="track" src="imgs/in5-img01.png">
 			    <div class="icon01"><img src="imgs/in5-icon01.png"></div>
 				<div class="icon02"><img src="imgs/in5-icon02.png"></div>
 				<div class="icon03"><img src="imgs/in5-icon03.png"></div>
@@ -394,7 +513,7 @@
 		</div>
 	</div>
 	
-		<!-- 第八页 爱佑童心 -->
+	<!-- 第八页 爱佑童心（联合救助网络） -->
 	<div class="section" id="section8">
 		<div class="wrap">
 			<div class="title">
@@ -406,14 +525,14 @@
 				</div>
 				<div class="right08">
 				  <img src="imgs/in6-img-rbg.png">
-				  <div class="yuan yuan01"><img src="imgs/in6-r-img01.png"></div>
-				  <div class="yuan yuan02"><img src="imgs/in6-r-img02.png"></div>
-				  <div class="yuan yuan03"><img src="imgs/in6-r-img03.png"></div>
-				  <div class="yuan yuan04"><img src="imgs/in6-r-img04.png"></div>
-				  <div class="yuan yuan05"><img src="imgs/in6-r-img05.png"></div>
-				  <div class="yuan yuan06"><img src="imgs/in6-r-img06.png"></div>
-				  <div class="yuan yuan07"><img src="imgs/in6-r-img07.png"></div>
-				  <div class="yuan yuan08"><img src="imgs/in6-r-img08.png"></div>
+				  <div class="yuan yuan01" style="display:none;"><img src="imgs/in6-r-img01.png"></div>
+				  <div class="yuan yuan02" style="display:none;"><img src="imgs/in6-r-img02.png"></div>
+				  <div class="yuan yuan03" style="display:none;"><img src="imgs/in6-r-img03.png"></div>
+				  <div class="yuan yuan04" style="display:none;"><img src="imgs/in6-r-img04.png"></div>
+				  <div class="yuan yuan05" style="display:none;"><img src="imgs/in6-r-img05.png"></div>
+				  <div class="yuan yuan06" style="display:none;"><img src="imgs/in6-r-img06.png"></div>
+				  <div class="yuan yuan07" style="display:none;"><img src="imgs/in6-r-img07.png"></div>
+				  <div class="yuan yuan08" style="display:none;"><img src="imgs/in6-r-img08.png"></div>
 				</div>
 				<div class="clear"></div>
 			</div>
@@ -436,7 +555,7 @@
 		</div>
 	</div>
 	
-		<!-- 第十页 爱佑新生 -->
+		<!-- 第十页 爱佑新生（潜入式养护中心） -->
 	<div class="section" id="section10">
 		<div class="wrap">
 			<div class="title">
@@ -448,18 +567,18 @@
 				</div>
 				<div class="right10">
 				  <img src="imgs/in8-r-bg.png">
-				  <div class="rain rain01"><img src="imgs/in8-r-icon.png"><span class="text01">爱佑新生乌鲁木齐儿童养护中心（筹）</span></div>
-				  <div class="rain rain02"><span class="text02">爱佑新生宁夏儿童养护中心</span><img src="imgs/in8-r-icon.png"></div>
-				  <div class="rain rain03"><span class="text03">爱佑新生西安儿童养护中心</span><img src="imgs/in8-r-icon.png"></div>
-				  <div class="rain rain04"><span class="text04">爱佑新生成都儿童养护中心</span><img src="imgs/in8-r-icon.png"></div>
-				  <div class="rain rain05"><img src="imgs/in8-r-icon.png"><br><span class="text05">爱佑新生成重庆儿童养护中心</span></div>
-				  <div class="rain rain06"><span class="text06">爱佑新生成昆明儿童养护中心</span><img src="imgs/in8-r-icon.png"></div>
-				  <div class="rain rain07"><img src="imgs/in8-r-icon.png"><span class="text07">爱佑、银泰开封儿童养护中心</span></div>
-				  <div class="rain rain08"><img src="imgs/in8-r-icon.png"><span class="text08">爱佑新生济南儿童养护中心</span></div>
-				  <div class="rain rain09"><img src="imgs/in8-r-icon.png"><span class="text09">爱佑新生南京儿童养护中心</span></div>
-				  <div class="rain rain10"><img src="imgs/in8-r-icon.png"><span class="text10">爱佑、万科武汉儿童养护中心</span></div>
-				  <div class="rain rain11"><img src="imgs/in8-r-icon.png"><span class="text11">爱佑新生南昌儿童养护中心（筹）</span></div>
-				  <div class="rain rain12"><img src="imgs/in8-r-icon.png"><span class="text12">爱佑新生广州儿童养护中心</span></div>
+				    <div class="rain rain01"><img src="imgs/in8-r-icon.png"><span class="text01">爱佑新生乌鲁木齐儿童养护中心（筹）</span></div>
+				    <div class="rain rain02"><span class="text02">爱佑新生宁夏儿童养护中心</span><img src="imgs/in8-r-icon.png"></div>
+				    <div class="rain rain03"><span class="text03">爱佑新生西安儿童养护中心</span><img src="imgs/in8-r-icon.png"></div>
+				    <div class="rain rain04"><span class="text04">爱佑新生成都儿童养护中心</span><img src="imgs/in8-r-icon.png"></div>
+				    <div class="rain rain05"><img src="imgs/in8-r-icon.png"><br><span class="text05">爱佑新生成重庆儿童养护中心</span></div>
+				    <div class="rain rain06"><span class="text06">爱佑新生成昆明儿童养护中心</span><img src="imgs/in8-r-icon.png"></div>
+				    <div class="rain rain07"><img src="imgs/in8-r-icon.png"><span class="text07">爱佑、银泰开封儿童养护中心</span></div>
+				    <div class="rain rain08"><img src="imgs/in8-r-icon.png"><span class="text08">爱佑新生济南儿童养护中心</span></div>
+				    <div class="rain rain09"><img src="imgs/in8-r-icon.png"><span class="text09">爱佑新生南京儿童养护中心</span></div>
+				    <div class="rain rain10"><img src="imgs/in8-r-icon.png"><span class="text10">爱佑、万科武汉儿童养护中心</span></div>
+				    <div class="rain rain11"><img src="imgs/in8-r-icon.png"><span class="text11">爱佑新生南昌儿童养护中心（筹）</span></div>
+				    <div class="rain rain12"><img src="imgs/in8-r-icon.png"><span class="text12">爱佑新生广州儿童养护中心</span></div>
 				</div>
 				<div class="clear"></div>
 			</div>
