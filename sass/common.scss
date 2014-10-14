@@ -521,71 +521,72 @@ body {
 			.right10 {
 			  float: left;
 			  width: 46.1%;
-			  background: url("../imgs/in8-r-bg-bak.png") no-repeat bottom right/100% auto;
+			  //background: url("../imgs/in8-r-bg-bak.png") no-repeat bottom right/100% auto;
 			  width: 59.2%;
 			  position: relative;
 			  >img {
 			    width: 100%;
 				height: auto;
-				opacity: 0.5;
+				opacity: 1;
 			  }
-			  .icon {
-			   // background: url("../imgs/in8-r-bg-bak.png") no-repeat bottom right/100% auto;
+			  .rain {
+			   //background: url("../imgs/in8-r-bg-bak.png") no-repeat bottom right/100% auto;
 			   position: absolute;
 			   z-index: 3;
 			   color: #ffffff;
 			   font-size: 90%;
+			   text-align: left;
 			   .text01 {
 				 
 			   }
 			  }
-			  .icon01 {
+			  .rain01 {
 			    left: 21.5%;
 			    top: 32.5%;
 			  }
-			  .icon02 {
+			  .rain02 {
 			    left: 31.5%;
 			    top: 41.5%;
 			  }
-			  .icon03 {
-			    right:0;
-			    bottom: 0;
+			  .rain03 {
+			    left: 36.5%;
+			    top: 51.5%;
 			  }
-			  .icon04 {
-			    right:0;
-			    bottom: 0;
+			  .rain04 {
+			    bottom: 33%;
+			    left: 26%;
 			  }
-			  .icon05 {
-			    right:0;
-			    bottom: 0;
+			  .rain05 {
+			    bottom: 29.5%;
+			    right: 18.5%;
 			  }
-			  .icon06 {
-			    right:0;
-			    bottom: 0;
+			  .rain06 {
+			    bottom: 17%;
+			    left: 19%;
 			  }
-			  .icon07 {
-			    right:0;
-			    bottom: 0;
+			  .rain07 {
+			    right: 3.5%;
+			    top: 49%;
 			  }
-			  .icon08 {
-			    right:0;
-			    bottom: 0;
+			  .rain08 {
+			    right: -2%;
+			    top: 43%;
 			  }
-			  .icon09 {
-			    right:0;
-			    bottom: 0;
+			  .rain09 {
+			    bottom: 37.5%;
+			    right: -3%;
 			  }
-			  .icon10 {
-			    right:0;
-			    bottom: 0;
+			  .rain10 {
+			    bottom: 34%;
+			    right: 7%;
 			  }
-			  .icon11 {
-			    right:0;
-			    bottom: 0;
+			  .rain11 {
+			    bottom: 22.8%;
+			    right: -5.3%;
 			  }
-			  .icon12 {
-			    right:0;
-			    bottom: 0;
+			  .rain12 {
+			    bottom: 14.5%;
+			    right: 2.8%;
 			  }
 			}
 		  }

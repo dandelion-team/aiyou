@@ -642,7 +642,6 @@ body {
 #section10 .wrap .main10 .right10 {
   float: left;
   width: 46.1%;
-  background: url("../imgs/in8-r-bg-bak.png") no-repeat bottom right/100% auto;
   width: 59.2%;
   position: relative;
 }
@@ -650,176 +649,177 @@ body {
 #section10 .wrap .main10 .right10 > img {
   width: 100%;
   height: auto;
-  opacity: 0.5;
+  opacity: 1;
 }
 /* line 532, ../sass/common.scss */
-#section10 .wrap .main10 .right10 .icon {
+#section10 .wrap .main10 .right10 .rain {
   position: absolute;
   z-index: 3;
   color: #ffffff;
   font-size: 90%;
+  text-align: left;
 }
-/* line 542, ../sass/common.scss */
-#section10 .wrap .main10 .right10 .icon01 {
+/* line 543, ../sass/common.scss */
+#section10 .wrap .main10 .right10 .rain01 {
   left: 21.5%;
   top: 32.5%;
 }
-/* line 546, ../sass/common.scss */
-#section10 .wrap .main10 .right10 .icon02 {
+/* line 547, ../sass/common.scss */
+#section10 .wrap .main10 .right10 .rain02 {
   left: 31.5%;
   top: 41.5%;
 }
-/* line 550, ../sass/common.scss */
-#section10 .wrap .main10 .right10 .icon03 {
-  right: 0;
-  bottom: 0;
+/* line 551, ../sass/common.scss */
+#section10 .wrap .main10 .right10 .rain03 {
+  left: 36.5%;
+  top: 51.5%;
 }
-/* line 554, ../sass/common.scss */
-#section10 .wrap .main10 .right10 .icon04 {
-  right: 0;
-  bottom: 0;
+/* line 555, ../sass/common.scss */
+#section10 .wrap .main10 .right10 .rain04 {
+  bottom: 33%;
+  left: 26%;
 }
-/* line 558, ../sass/common.scss */
-#section10 .wrap .main10 .right10 .icon05 {
-  right: 0;
-  bottom: 0;
+/* line 559, ../sass/common.scss */
+#section10 .wrap .main10 .right10 .rain05 {
+  bottom: 29.5%;
+  right: 18.5%;
 }
-/* line 562, ../sass/common.scss */
-#section10 .wrap .main10 .right10 .icon06 {
-  right: 0;
-  bottom: 0;
+/* line 563, ../sass/common.scss */
+#section10 .wrap .main10 .right10 .rain06 {
+  bottom: 17%;
+  left: 19%;
 }
-/* line 566, ../sass/common.scss */
-#section10 .wrap .main10 .right10 .icon07 {
-  right: 0;
-  bottom: 0;
+/* line 567, ../sass/common.scss */
+#section10 .wrap .main10 .right10 .rain07 {
+  right: 3.5%;
+  top: 49%;
 }
-/* line 570, ../sass/common.scss */
-#section10 .wrap .main10 .right10 .icon08 {
-  right: 0;
-  bottom: 0;
+/* line 571, ../sass/common.scss */
+#section10 .wrap .main10 .right10 .rain08 {
+  right: -2%;
+  top: 43%;
 }
-/* line 574, ../sass/common.scss */
-#section10 .wrap .main10 .right10 .icon09 {
-  right: 0;
-  bottom: 0;
+/* line 575, ../sass/common.scss */
+#section10 .wrap .main10 .right10 .rain09 {
+  bottom: 37.5%;
+  right: -3%;
 }
-/* line 578, ../sass/common.scss */
-#section10 .wrap .main10 .right10 .icon10 {
-  right: 0;
-  bottom: 0;
+/* line 579, ../sass/common.scss */
+#section10 .wrap .main10 .right10 .rain10 {
+  bottom: 34%;
+  right: 7%;
 }
-/* line 582, ../sass/common.scss */
-#section10 .wrap .main10 .right10 .icon11 {
-  right: 0;
-  bottom: 0;
+/* line 583, ../sass/common.scss */
+#section10 .wrap .main10 .right10 .rain11 {
+  bottom: 22.8%;
+  right: -5.3%;
 }
-/* line 586, ../sass/common.scss */
-#section10 .wrap .main10 .right10 .icon12 {
-  right: 0;
-  bottom: 0;
+/* line 587, ../sass/common.scss */
+#section10 .wrap .main10 .right10 .rain12 {
+  bottom: 14.5%;
+  right: 2.8%;
 }
 
-/* line 597, ../sass/common.scss */
+/* line 598, ../sass/common.scss */
 #section11 {
   background-color: #21303d !important;
 }
-/* line 599, ../sass/common.scss */
+/* line 600, ../sass/common.scss */
 #section11 .wrap {
   height: 100%;
 }
-/* line 602, ../sass/common.scss */
+/* line 603, ../sass/common.scss */
 #section11 .wrap .title img {
   width: 40.3%;
 }
 
-/* line 611, ../sass/common.scss */
+/* line 612, ../sass/common.scss */
 #section12 {
   background-color: #44B9A3 !important;
 }
-/* line 613, ../sass/common.scss */
+/* line 614, ../sass/common.scss */
 #section12 .wrap {
   height: 100%;
 }
-/* line 616, ../sass/common.scss */
+/* line 617, ../sass/common.scss */
 #section12 .wrap .title img {
   width: 40.3%;
 }
 
-/* line 625, ../sass/common.scss */
+/* line 626, ../sass/common.scss */
 #section13 {
   background-color: #76BD46 !important;
 }
-/* line 627, ../sass/common.scss */
+/* line 628, ../sass/common.scss */
 #section13 .wrap {
   height: 100%;
 }
-/* line 630, ../sass/common.scss */
+/* line 631, ../sass/common.scss */
 #section13 .wrap .title img {
   width: 40.3%;
 }
 
-/* line 639, ../sass/common.scss */
+/* line 640, ../sass/common.scss */
 #section14 {
   background-color: #f39834 !important;
 }
-/* line 641, ../sass/common.scss */
+/* line 642, ../sass/common.scss */
 #section14 .wrap {
   height: 100%;
 }
-/* line 644, ../sass/common.scss */
+/* line 645, ../sass/common.scss */
 #section14 .wrap .title img {
   width: 40.3%;
 }
 
-/* line 653, ../sass/common.scss */
+/* line 654, ../sass/common.scss */
 #section15 {
   background-color: #22313C !important;
 }
-/* line 655, ../sass/common.scss */
+/* line 656, ../sass/common.scss */
 #section15 .wrap {
   height: 100%;
 }
-/* line 658, ../sass/common.scss */
+/* line 659, ../sass/common.scss */
 #section15 .wrap .title img {
   width: 40.3%;
 }
 
-/* line 667, ../sass/common.scss */
+/* line 668, ../sass/common.scss */
 #section16 {
   background-color: #76BD46 !important;
 }
-/* line 669, ../sass/common.scss */
+/* line 670, ../sass/common.scss */
 #section16 .wrap {
   height: 100%;
 }
-/* line 672, ../sass/common.scss */
+/* line 673, ../sass/common.scss */
 #section16 .wrap .title img {
   width: 40.3%;
 }
 
-/* line 681, ../sass/common.scss */
+/* line 682, ../sass/common.scss */
 #section17 {
   background-color: #f39834 !important;
 }
-/* line 683, ../sass/common.scss */
+/* line 684, ../sass/common.scss */
 #section17 .wrap {
   height: 100%;
 }
-/* line 686, ../sass/common.scss */
+/* line 687, ../sass/common.scss */
 #section17 .wrap .title img {
   width: 40.3%;
 }
 
-/* line 695, ../sass/common.scss */
+/* line 696, ../sass/common.scss */
 #section18 {
   background-color: #C81533 !important;
 }
-/* line 697, ../sass/common.scss */
+/* line 698, ../sass/common.scss */
 #section18 .wrap {
   height: 100%;
 }
-/* line 700, ../sass/common.scss */
+/* line 701, ../sass/common.scss */
 #section18 .wrap .title img {
   width: 40.3%;
 }
