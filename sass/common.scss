@@ -1,11 +1,11 @@
 @charset "UTF-8";
-@import "compass/reset";
 @import "compass/css3";
 
 
 body {
   color: #333;
   font-family: "微软雅黑","Microsoft YaHei",Lucida,Verdana,"Hiragino Sans GB",STHeiti,"WenQuanYi Micro Hei","Droid Sans Fallback",SimSun,"proxima-nova","Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 12px !important;
 }
 
 .title {
@@ -505,7 +505,7 @@ body {
 	      height: 100%;
           .title {
 		    img {
-			  width: 23.5%;
+			  width: 23%;
 			}
 		  }
 		  .main10 {
@@ -559,7 +559,7 @@ body {
 			    left: 26%;
 			  }
 			  .rain05 {
-			    bottom: 29.5%;
+			    bottom: 30%;
 			    right: 18.5%;
 			  }
 			  .rain06 {
@@ -603,7 +603,52 @@ body {
 	      height: 100%;
           .title {
 		    img {
-			  width: 40.3%;
+			  width: 27%;
+			}
+		  }
+		  .main11 {
+		    .left11-01 {
+			   width: 18.8%;
+			   float: left;
+			   padding: 10% 2.5% 0 0;
+			   img {
+			     width: 100%;
+				 height: auto;
+			   }
+			}
+			.left11-02 {
+			  background-color: #434751;
+			  width: 36%;
+			  text-align: left;
+			  padding: 1% 2.5% 1% 1.7%;
+			  float: left;
+			  .text11 {
+			    padding: 1.5% 0;
+				clear: both;
+				img {
+				  width: 12%;
+				  float: left;
+				}
+				.text11-01 {
+				  background-color: #38B1A0;
+				  color: #fff;
+				  padding: 0 2%;
+				  text-align: left;
+				  float: right;
+				  width:82%;
+				  line-height: 1.6em;
+				  margin: 3.5% 0;
+				}
+			  }
+			}
+			.left11-03 {
+			  padding: 3% 0 0 4%;
+			  width: 32.8%;
+			  float: left;
+			  img {
+			    width: 100%;
+				height: auto;
+			  }
 			}
 		  }
 		}
@@ -614,13 +659,31 @@ body {
 #section12 {
 	    background-color: #44B9A3 !important;
 		.wrap {
-	      height: 100%;
+	      height: auto;
           .title {
 		    img {
-			  width: 40.3%;
+			  width: 26%;
 			}
 		  }
 		}
+		  .main12 {
+		    background-color: #6fc4b2;
+			.left12 {
+			  width: 960px;
+			  margin: 0 auto;
+			  padding: 2% 0;
+			  .left12-01,.left12-02,.left12-03 {
+			    float: left;
+				margin-right: 2%;
+				p {
+				  text-align: center;
+				  color: #fff;
+				  font-size: 12px;
+				}
+			  }
+			}
+		  }
+		
 }
 
 // section13
@@ -631,8 +694,13 @@ body {
 	      height: 100%;
           .title {
 		    img {
-			  width: 40.3%;
+			  width: 25.5%;
 			}
+		  }
+		  .main13 {
+		    background: url("../imgs/in14-img.png") no-repeat 0 0;
+			height: 243px;
+			width: 75.9%%;
 		  }
 		}
 }
@@ -643,70 +711,15 @@ body {
 	    background-color: #f39834 !important;
 		.wrap {
 	      height: 100%;
-          .title {
-		    img {
-			  width: 40.3%;
-			}
+          text-align: center;
+		  padding-top: 20%;
+		  img {
+		    width: 38%;
 		  }
 		}
 }
 
-// section15
-	
-#section15 {
-	    background-color: #22313C !important;
-		.wrap {
-	      height: 100%;
-          .title {
-		    img {
-			  width: 40.3%;
-			}
-		  }
-		}
-}
 
-// section16
-	
-#section16 {
-	    background-color: #76BD46 !important;
-		.wrap {
-	      height: 100%;
-          .title {
-		    img {
-			  width: 40.3%;
-			}
-		  }
-		}
-}
-
-// section17
-	
-#section17 {
-	    background-color: #f39834 !important;
-		.wrap {
-	      height: 100%;
-          .title {
-		    img {
-			  width: 40.3%;
-			}
-		  }
-		}
-}
-
-// section18
-	
-#section18 {
-	    background-color: #C81533 !important;
-		.wrap {
-	      height: 100%;
-          .title {
-		    img {
-			  width: 40.3%;
-			}
-		  }
-		}
-}
-		  
 		  
 
 
