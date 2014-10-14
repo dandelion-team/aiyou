@@ -39,7 +39,7 @@
             $('#homeImg').rotate3Di(20, 2000);
 			setTimeout(function() {$('#homeImg').rotate3Di(0, 2000);}, 800);
 			
-			// 十年成长效果
+			// 爱佑十年成长（1）
 			var rate = 1.2;
 			$('.growTooltip').mouseenter(function() {
                 $(this).animate({
@@ -57,8 +57,6 @@
                 });
             });
 			
-			var index2Times = 0;
-			
 			$('#fullpage').fullpage({
 				'verticalCentered': false,
 				'css3': true,
@@ -74,21 +72,30 @@
 			            setTimeout(function() {$('#homeImg').rotate3Di(0, 2000);}, 800);
 					}
 			
-					// 花旋转效果
+					// 给生命一次机会
 					if (index == 2) {
-					   /*
-					    index2Times += 1;
-					    if (index2Times == 1) {
-					        rotate(".flower02");
-						    setTimeout(dictateRotate, 800);
-						}
-						*/
 						$('.title01').animate({
                           opacity: 1,
                           bottom: 0,
                         }, 1200);
 					} else {
 					    $('.title01').css("bottom", "-200px").css("opacity", 0);
+					}
+					
+					// 爱佑十年成长（1）
+					if (index == 3) {
+					    $('.box08').animate({
+                          opacity: 1,
+                          left: 0,
+                        }, 1200, function(){
+					      $('.growTooltip').animate({
+                            opacity: 1,
+                            bottom: 0,
+                          }, 1200);
+						});
+					} else {
+					    $('.box08').css("left", "-200px").css("opacity", 0);
+					    $('.growTooltip').css("bottom", "-200px").css("opacity", 0);
 					}
 					
 					// 爱佑十年成长（2）
@@ -288,7 +295,7 @@
 	<!-- 第二页 花朵-->
 	<div class="section" id="section2">
 		<div class="wrap">
-		      <div class="title01" style="opacity: 0; bottom: -200px;position: relative;"><img src="imgs/title001.png"></div>
+		      <div class="title01" style="opacity: 0; bottom: -200px; position: relative;"><img src="imgs/title001.png"></div>
 			 <!-- <div id="flower">
 			    <div class="flower01">
 				  <img src="imgs/flower-t01.png">
@@ -315,34 +322,34 @@
 			</div>
 			<div class="main03">
 			    
-				 <img class="growTooltip box01" src="imgs/001.png">
+				 <img class="growTooltip box01" style="opacity: 0; bottom: -200px; position: relative;" src="imgs/001.png">
 				
 				
 				
-				  <img class="growTooltip box02" src="imgs/002.png">
+				  <img class="growTooltip box02" style="opacity: 0; bottom: -200px; position: relative;" src="imgs/002.png">
 				
 				
 				
-				 <img class="growTooltip box03" src="imgs/003.png">
+				 <img class="growTooltip box03" style="opacity: 0; bottom: -200px; position: relative;" src="imgs/003.png">
 				
 				
 				
-				 <img class="growTooltip box04" src="imgs/004.png">
+				 <img class="growTooltip box04" style="opacity: 0; bottom: -200px; position: relative;" src="imgs/004.png">
 				
 				
 				
-				 <img class="growTooltip box05" src="imgs/005.png">
+				 <img class="growTooltip box05" style="opacity: 0; bottom: -200px; position: relative;" src="imgs/005.png">
 				
 				
 				
-				 <img class="growTooltip box06" src="imgs/006.png">
+				 <img class="growTooltip box06" style="opacity: 0; bottom: -200px; position: relative;" src="imgs/006.png">
 				
 				
 				
-				 <img class="growTooltip box07" src="imgs/007.png">
+				 <img class="growTooltip box07" style="opacity: 0; bottom: -200px; position: relative;" src="imgs/007.png">
 				 <div class="clear"></div>
 				
-				<div class="box08">
+				<div class="box08" style="opacity: 0; left: -200px; position: relative;">
 				 <img src="imgs/009.png">
 				</div>
 				
