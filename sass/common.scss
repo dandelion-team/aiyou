@@ -488,7 +488,7 @@ body {
 			.right09-box {
 			  float: left;
 			  width: 46.1%;
-			  margin: 2% 0 0 12%;
+			  margin: 0 0 0 12%;
 			  position: relative;
 			  >img {
 			    width: 100%;
@@ -544,60 +544,64 @@ body {
 			  }
 			  
 			    .rain {
-			     //background: url("../imgs/in8-r-bg-bak.png") no-repeat bottom right/100% auto;
+			      //background: url("../imgs/in8-r-bg-bak.png") no-repeat bottom right/100% auto;
 			      position: absolute;
 			      z-index: 3;
 			      color: #ffffff;
 			      font-size: 12px;
 			      text-align: left;
+				  width: 50%;
+				  img {
+				    width: 6%;
+				  }
 			    }
 			    .rain01 {
-			      left: 21.5%;
-			      top: 32.5%;
+			      left: 22%;
+			      top: 33.5%;
 			    }
 			    .rain02 {
-			      left: 31.5%;
-			      top: 41.5%;
+			      left: 29.5%;
+			      top: 42%;
 			    }
 			    .rain03 {
-			      left: 36.5%;
-			      top: 51.5%;
+			      left: 34.5%;
+			      top: 52%;
 			    }
 			    .rain04 {
-			      bottom: 33%;
-			      left: 26%;
+			      bottom: 32%;
+			      left: 24%;
 			    }
 			    .rain05 {
 			      bottom: 30%;
-			      right: 18.5%;
+			      right: -7%;
 			    }
 			    .rain06 {
-			      bottom: 17%;
-			      left: 19%;
+			      bottom: 16%;
+			      left: 16.5%;
 			    }
 			    .rain07 {
-			      right: 3.5%;
-			      top: 49%;
+			      right: -19%;
+			      top: 51%;
 			    }
 			    .rain08 {
-			      right: -2%;
-			      top: 43%;
+			      right: -26.5%;
+			      top: 44%;
 			    }
 			    .rain09 {
-			      bottom: 37.5%;
-			      right: -3%;
+			      bottom: 36.5%;
+			      right: -27.5%;
 			    }
 			    .rain10 {
-			      bottom: 34%;
-			      right: 7%;
+			      bottom: 33%;
+			      right: -16%;
 			    }
 			    .rain11 {
-			      bottom: 22.8%;
-			      right: -5.3%;
+			      bottom: 22%;
+			      right: -24%;
 			    }
 			    .rain12 {
-			      bottom: 14.5%;
-			      right: 2.8%;
+			      bottom: 14%;
+			      right: -22%;
 			    }
 			 
 			}
