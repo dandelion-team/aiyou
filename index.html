@@ -335,6 +335,19 @@
                         $('.rain12').css("bottom", '200%');					    
 					}
 					
+					// 爱佑和康
+					if (index == 12) {
+                        $('.dress01').animate({bottom:'13.5%', opacity: 1}, 1200, 'easeOutBounce', function() {});
+                        $('.dress02').animate({bottom:'35%', opacity: 1}, 1200, 'easeOutBounce', function() {});
+                        $('.dress03').animate({bottom:'51%', opacity: 1}, 1200, 'easeOutBounce', function() {});
+                        $('.dress04').animate({top:'31.5%', opacity: 1}, 1200, 'easeOutBounce', function() {});
+					} else {
+                        $('.dress01').css("bottom", '200%');
+                        $('.dress02').css("bottom", '200%');
+                        $('.dress03').css("bottom", '200%');
+                        $('.dress04').css("top", '-200%');			    
+					}
+					
 					// 公益创投
 					if (index == 13) {
 					    $('.main13').highcharts({
@@ -703,7 +716,7 @@
 		</div>
 	</div>
 
-		<!-- 第十二页 爱佑童心 -->
+		<!-- 第十二页 爱佑和康 -->
 	<div class="section" id="section12">
 		<div class="wrap">
 			<div class="title">
@@ -711,19 +724,19 @@
 			</div>
 			<div class="main12">
 			  <img src="imgs/in12-map.png">
-			  <div class="dress dress01">
+			  <div class="dress dress01" style="bottom: 200%; opacity: 0;">
 			    <img src="imgs/in8-r-icon.png">
 			    <span class="text01">深圳市爱佑和康儿童康复中心</span>
 			  </div>
-			  <div class="dress dress02">
+			  <div class="dress dress02" style="bottom: 200%; opacity: 0;">
 			    <span class="text01">湖北省爱佑和康麟洁儿童康复服务中心</span>
 				<img src="imgs/in8-r-icon.png">
 			  </div>
-			  <div class="dress dress03">
+			  <div class="dress dress03" style="bottom: 200%; opacity: 0;">
 			    <span class="text01">宁夏爱佑和康儿童康复中心</span>
 				<img src="imgs/in8-r-icon.png">
 			  </div>
-			  <div class="dress dress04">
+			  <div class="dress dress04" style="top: -200%; opacity: 0;">
 			    <img src="imgs/in8-r-icon.png">
 			    <span class="text01">北京爱佑和康儿童康复中心</span>
 			  </div>
