@@ -326,7 +326,7 @@ body {
 
 			}
 			.icon01 {
-			  bottom: 3%;
+			  bottom: 0;
 			  left: 0;
 			  position: absolute;
 			  width: 11%;
@@ -346,7 +346,7 @@ body {
 			  }
 			}
 			.icon03 {
-			  bottom: 10%;
+			  bottom: 3%;
 			  left: 26%;
 			  position: absolute;
 			  width: 15%;
@@ -403,7 +403,7 @@ body {
 			}
 			.right08 {
 			  float: left;
-			  width: 46.5%;
+			  width: 48%;
 			  position: relative;
 			 // background: url("../imgs/in6-r-img.png") no-repeat bottom right/100% auto;
 			  
@@ -412,7 +412,7 @@ body {
 				height: auto;
 			  }
 			  .yuan {
-			    width: 22%;
+			    width: 21%;
 				position: absolute;
 				img {
 				  width: 100%;
@@ -479,6 +479,7 @@ body {
 		    .left09 {
 			  float: left;
 			  width: 18.5%;
+			  padding-top: 5%;
 
 			  img {
 			    width: 100%;
