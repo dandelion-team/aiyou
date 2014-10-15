@@ -5,14 +5,18 @@
    width: 1280px;
 }
 .title {
-  padding: 5% 0 7%;
+  padding: 2% 0 5%;
 }
 #section1 {
   .main01{
-    padding: 10% 0 0;  
+    padding: 10% 0 0; 
+    img {
+      width: 32%;
+    }	
   }
   .logo {
     bottom: 0.5%;
+	width: 40%;
   }
 }
 
@@ -27,6 +31,7 @@
 #section3 {
   .wrap {
     .main03 {
+	  bottom: 2%;
 	  .box01,.box02,.box03,.box04,.box05,.box06,.box07 {
 	    width: 8.5%;
 	  }
@@ -51,7 +56,7 @@
 #section8 {
   .wrap {
     .title {
-	  padding-bottom: 3%;
+	  padding-bottom: 1%;
 	}
     .main08 {
 	  .right08 {
@@ -84,7 +89,7 @@
 	}
 	.main10 {
 	  .right10 {
-	    margin-top: -5%;
+	    margin-top: -6%;
 		.rain02 {
 		  left: 36%;
 		}
