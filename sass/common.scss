@@ -696,22 +696,26 @@ body {
 			   position: absolute;
 			   text-align: left;
 			   z-index: 3;
+			   width: 50%;
+			   img {
+			     width: 6%;
+			   }
 			 }
 			 .dress01 {
 			   bottom: 13.5%;
-			   right: 5.5%;
+			   right: -20%;
 			 }
 			 .dress02 {
 			   bottom: 35%;
-			   right: 34.5%;
+			   right: 24%;
 			 }
 			 .dress03 {
 			   bottom: 51%;
-			   right: 45.3%;
+			   right: 23%;
 			 }
 			 .dress04 {
-			   right: 4.5%;
-			   top: 31%;
+			   right: -23.5%;
+			   top: 31.5%;
 			 }
 		  }
 		}

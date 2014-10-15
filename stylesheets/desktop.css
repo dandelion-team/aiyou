@@ -791,51 +791,56 @@ body {
   position: absolute;
   text-align: left;
   z-index: 3;
+  width: 50%;
 }
 /* line 700, ../sass/common.scss */
-#section12 .wrap .main12 .dress01 {
-  bottom: 13.5%;
-  right: 5.5%;
+#section12 .wrap .main12 .dress img {
+  width: 6%;
 }
 /* line 704, ../sass/common.scss */
-#section12 .wrap .main12 .dress02 {
-  bottom: 35%;
-  right: 34.5%;
+#section12 .wrap .main12 .dress01 {
+  bottom: 13.5%;
+  right: -20%;
 }
 /* line 708, ../sass/common.scss */
-#section12 .wrap .main12 .dress03 {
-  bottom: 51%;
-  right: 45.3%;
+#section12 .wrap .main12 .dress02 {
+  bottom: 35%;
+  right: 24%;
 }
 /* line 712, ../sass/common.scss */
+#section12 .wrap .main12 .dress03 {
+  bottom: 51%;
+  right: 23%;
+}
+/* line 716, ../sass/common.scss */
 #section12 .wrap .main12 .dress04 {
-  right: 4.5%;
-  top: 31%;
+  right: -23.5%;
+  top: 31.5%;
 }
 
-/* line 723, ../sass/common.scss */
+/* line 727, ../sass/common.scss */
 #section13 {
   background-color: #127083 !important;
 }
-/* line 725, ../sass/common.scss */
+/* line 729, ../sass/common.scss */
 #section13 .wrap {
   height: 100%;
 }
-/* line 728, ../sass/common.scss */
+/* line 732, ../sass/common.scss */
 #section13 .wrap .title img {
   width: 34%;
 }
-/* line 732, ../sass/common.scss */
+/* line 736, ../sass/common.scss */
 #section13 .wrap .main13-box {
   width: 77%;
   position: relative;
 }
-/* line 735, ../sass/common.scss */
+/* line 739, ../sass/common.scss */
 #section13 .wrap .main13-box img {
   width: 100%;
   height: auto;
 }
-/* line 739, ../sass/common.scss */
+/* line 743, ../sass/common.scss */
 #section13 .wrap .main13-box .main13 {
   position: absolute;
   top: 0;
@@ -844,24 +849,24 @@ body {
   height: 100%;
 }
 
-/* line 753, ../sass/common.scss */
+/* line 757, ../sass/common.scss */
 #section14 {
   background-color: #127083 !important;
 }
-/* line 755, ../sass/common.scss */
+/* line 759, ../sass/common.scss */
 #section14 .wrap {
   height: 100%;
   text-align: center;
   padding-top: 20%;
 }
-/* line 759, ../sass/common.scss */
+/* line 763, ../sass/common.scss */
 #section14 .wrap img {
   width: 38%;
 }
 
 /* line 4, ../sass/desktop.scss */
 .wrap {
-  width: 960px;
+  width: 1280px;
 }
 
 /* line 7, ../sass/desktop.scss */
