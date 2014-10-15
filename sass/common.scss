@@ -89,12 +89,12 @@ body {
 	      height: 100%;
 		  .title01 {
 	         text-align: center;
-		     padding-top: 40%;
+		     padding-top: 30%;
 		     margin: 0 auto;
 		     clear: both;
 			 
 			 img {
-			   width: 50%;
+			   width: 50.1%;
 			   height: auto;
 			 }
 	      }
@@ -241,7 +241,7 @@ body {
 	    background-color: #76bd46 !important;
 		.title {
 		    img {
-			  width: 40%;
+			  width: 40.3%;
 			}
 		}
 		.main05 {
@@ -389,8 +389,9 @@ body {
 		.wrap {
 	      height: 100%;
           .title {
+		    padding-bottom: 5%;
 		    img {
-			  width: 40%;
+			  width: 40.3%;
 			}
 		  }
 		  .main08 {
@@ -504,8 +505,9 @@ body {
 		.wrap {
 	      height: 100%;
           .title {
+		    padding-bottom: 2%;
 		    img {
-			  width: 23%;
+			  width: 23.1%;
 			}
 		  }
 		  .main10 {
@@ -531,65 +533,64 @@ body {
 				height: auto;
 				opacity: 1;
 			  }
-			  .rain {
-			   //background: url("../imgs/in8-r-bg-bak.png") no-repeat bottom right/100% auto;
-			   position: absolute;
-			   z-index: 3;
-			   color: #ffffff;
-			   font-size: 90%;
-			   text-align: left;
-			   .text01 {
-				 
-			   }
-			  }
-			  .rain01 {
-			    left: 21.5%;
-			    top: 32.5%;
-			  }
-			  .rain02 {
-			    left: 31.5%;
-			    top: 41.5%;
-			  }
-			  .rain03 {
-			    left: 36.5%;
-			    top: 51.5%;
-			  }
-			  .rain04 {
-			    bottom: 33%;
-			    left: 26%;
-			  }
-			  .rain05 {
-			    bottom: 30%;
-			    right: 18.5%;
-			  }
-			  .rain06 {
-			    bottom: 17%;
-			    left: 19%;
-			  }
-			  .rain07 {
-			    right: 3.5%;
-			    top: 49%;
-			  }
-			  .rain08 {
-			    right: -2%;
-			    top: 43%;
-			  }
-			  .rain09 {
-			    bottom: 37.5%;
-			    right: -3%;
-			  }
-			  .rain10 {
-			    bottom: 34%;
-			    right: 7%;
-			  }
-			  .rain11 {
-			    bottom: 22.8%;
-			    right: -5.3%;
-			  }
-			  .rain12 {
-			    bottom: 14.5%;
-			    right: 2.8%;
-			  }
+			  
+			    .rain {
+			     //background: url("../imgs/in8-r-bg-bak.png") no-repeat bottom right/100% auto;
+			      position: absolute;
+			      z-index: 3;
+			      color: #ffffff;
+			      font-size: 90%;
+			      text-align: left;
+			    }
+			    .rain01 {
+			      left: 21.5%;
+			      top: 32.5%;
+			    }
+			    .rain02 {
+			      left: 31.5%;
+			      top: 41.5%;
+			    }
+			    .rain03 {
+			      left: 36.5%;
+			      top: 51.5%;
+			    }
+			    .rain04 {
+			      bottom: 33%;
+			      left: 26%;
+			    }
+			    .rain05 {
+			      bottom: 30%;
+			      right: 18.5%;
+			    }
+			    .rain06 {
+			      bottom: 17%;
+			      left: 19%;
+			    }
+			    .rain07 {
+			      right: 3.5%;
+			      top: 49%;
+			    }
+			    .rain08 {
+			      right: -2%;
+			      top: 43%;
+			    }
+			    .rain09 {
+			      bottom: 37.5%;
+			      right: -3%;
+			    }
+			    .rain10 {
+			      bottom: 34%;
+			      right: 7%;
+			    }
+			    .rain11 {
+			      bottom: 22.8%;
+			      right: -5.3%;
+			    }
+			    .rain12 {
+			      bottom: 14.5%;
+			      right: 2.8%;
+			    }
+			 
 			}
 		  }
 		}
@@ -602,6 +603,7 @@ body {
 		.wrap {
 	      height: 100%;
           .title {
+		    padding-bottom: 7%;
 		    img {
 			  width: 27%;
 			}
