@@ -287,7 +287,19 @@
 					
 					// 爱佑童心（项目实施流程）
 					if (index == 7) {
-					    //$("#track").fadeIn(2000);
+					    $("#track").animate({opacity: 1}, 1200, "easeOutBounce");
+						setTimeout(function(){$('.icon01').animate({opacity: 1}, 1200, "easeOutBounce");}, 1000);
+						setTimeout(function(){$('.icon02').animate({opacity: 1}, 1200, "easeOutBounce");}, 2000);
+						setTimeout(function(){$('.icon03').animate({opacity: 1}, 1200, "easeOutBounce");}, 3000);
+						setTimeout(function(){$('.icon04').animate({opacity: 1}, 1200, "easeOutBounce");}, 4000);
+						setTimeout(function(){$('.icon05').animate({opacity: 1}, 1200, "easeOutBounce");}, 5000);
+					} else {
+					    $("#track").css("opacity", 0);
+					    $(".icon01").css("opacity", 0);
+						$(".icon02").css("opacity", 0);
+						$(".icon03").css("opacity", 0);
+						$(".icon04").css("opacity", 0);
+						$(".icon05").css("opacity", 0);
 					}
 					
 					// 爱佑童心（联合救助网络）
@@ -577,12 +589,12 @@
 			    <img src="imgs/page-title003.png">
 			</div>
 			<div class="main07">
-			    <img id="track" src="imgs/in5-img01.png">
-			    <div class="icon01"><img src="imgs/in5-icon01.png"></div>
-				<div class="icon02"><img src="imgs/in5-icon02.png"></div>
-				<div class="icon03"><img src="imgs/in5-icon03.png"></div>
-				<div class="icon04"><img src="imgs/in5-icon04.png"></div>
-				<div class="icon05"><img src="imgs/in5-icon05.png"></div>
+			    <img id="track" style="opacity: 0;" src="imgs/in5-img01.png">
+			    <div class="icon01" style="opacity: 0;"><img src="imgs/in5-icon01.png"></div>
+				<div class="icon02" style="opacity: 0;"><img src="imgs/in5-icon02.png"></div>
+				<div class="icon03" style="opacity: 0;"><img src="imgs/in5-icon03.png"></div>
+				<div class="icon04" style="opacity: 0;"><img src="imgs/in5-icon04.png"></div>
+				<div class="icon05" style="opacity: 0;"><img src="imgs/in5-icon05.png"></div>
 				<div class="zz"><img src="imgs/in7-img02.png"></div>
 			</div>
 		</div>
@@ -614,7 +626,7 @@
 		</div>
 	</div>
 	
-		<!-- 第九页 爱佑童心 -->
+	<!-- 第九页 爱佑童心 -->
 	<div class="section" id="section9">
 		<div class="wrap">
 			<div class="title">
@@ -633,7 +645,7 @@
 		</div>
 	</div>
 	
-		<!-- 第十页 爱佑新生（潜入式养护中心） -->
+	<!-- 第十页 爱佑新生（潜入式养护中心） -->
 	<div class="section" id="section10">
 		<div class="wrap">
 			<div class="title">
@@ -665,7 +677,7 @@
 		</div>
 	</div>
 	
-		<!-- 第十一页 爱佑童心 -->
+	<!-- 第十一页 爱佑童心 -->
 	<div class="section" id="section11">
 		<div class="wrap">
 			<div class="title">
@@ -715,7 +727,7 @@
 		</div>
 	</div>
 
-		<!-- 第十二页 爱佑和康 -->
+	<!-- 第十二页 爱佑和康 -->
 	<div class="section" id="section12">
 		<div class="wrap">
 			<div class="title">
@@ -743,7 +755,7 @@
 		</div>
 	</div>
 	
-		<!-- 第十三页 爱佑童心 -->
+	<!-- 第十三页 爱佑童心 -->
 	<div class="section" id="section13">
 		<div class="wrap">
 			<div class="title">
@@ -756,7 +768,7 @@
 		</div>
 	</div>
 	
-		<!-- 第十四页 爱佑童心 -->
+	<!-- 第十四页 爱佑童心 -->
 	<div class="section" id="section14">
 		<div class="wrap">
 			<img src="imgs/logo02.png">
