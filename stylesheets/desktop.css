@@ -864,56 +864,7 @@ body {
   width: 38%;
 }
 
-/* line 4, ../sass/desktop.scss */
+/* line 5, ../sass/desktop.scss */
 .wrap {
-  width: 1280px;
-}
-
-/* line 7, ../sass/desktop.scss */
-.title {
-  padding: 5% 0 7%;
-}
-
-/* line 11, ../sass/desktop.scss */
-#section1 .main01 {
-  padding: 10% 0 0;
-}
-/* line 14, ../sass/desktop.scss */
-#section1 .logo {
-  bottom: 0.5%;
-}
-
-/* line 21, ../sass/desktop.scss */
-#section2 .wrap .title01 {
-  padding-top: 26%;
-}
-
-/* line 30, ../sass/desktop.scss */
-#section3 .wrap .main03 .box01, #section3 .wrap .main03 .box02, #section3 .wrap .main03 .box03, #section3 .wrap .main03 .box04, #section3 .wrap .main03 .box05, #section3 .wrap .main03 .box06, #section3 .wrap .main03 .box07 {
-  width: 8.5%;
-}
-/* line 34, ../sass/desktop.scss */
-#section3 .wrap .main03 .box08 img {
-  width: 81.8%;
-  margin-left: 2.1% ；;
-}
-
-/* line 45, ../sass/desktop.scss */
-#section8 .wrap .title {
-  padding-bottom: 3%;
-}
-/* line 49, ../sass/desktop.scss */
-#section8 .wrap .main08 .right08 {
-  float: left;
-  position: relative;
-  width: 40%;
-}
-
-/* line 60, ../sass/desktop.scss */
-#section10 .wrap .title {
-  padding-bottom: 0;
-}
-/* line 64, ../sass/desktop.scss */
-#section10 .wrap .main10 .right10 {
-  margin-top: -5%;
+  width: 960px;
 }

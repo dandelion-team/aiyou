@@ -864,7 +864,70 @@ body {
   width: 38%;
 }
 
-/* line 5, ../sass/led.scss */
+/* line 4, ../sass/led.scss */
 .wrap {
   width: 1280px;
+}
+
+/* line 7, ../sass/led.scss */
+.title {
+  padding: 5% 0 7%;
+}
+
+/* line 11, ../sass/led.scss */
+#section1 .main01 {
+  padding: 10% 0 0;
+}
+/* line 14, ../sass/led.scss */
+#section1 .logo {
+  bottom: 0.5%;
+}
+
+/* line 21, ../sass/led.scss */
+#section2 .wrap .title01 {
+  padding-top: 26%;
+}
+
+/* line 30, ../sass/led.scss */
+#section3 .wrap .main03 .box01, #section3 .wrap .main03 .box02, #section3 .wrap .main03 .box03, #section3 .wrap .main03 .box04, #section3 .wrap .main03 .box05, #section3 .wrap .main03 .box06, #section3 .wrap .main03 .box07 {
+  width: 8.5%;
+}
+/* line 34, ../sass/led.scss */
+#section3 .wrap .main03 .box08 img {
+  width: 81.8%;
+  margin-left: 2.2%;
+}
+
+/* line 45, ../sass/led.scss */
+#section6 .main06 .left06 {
+  padding: 2% 0 0;
+}
+
+/* line 53, ../sass/led.scss */
+#section8 .wrap .title {
+  padding-bottom: 3%;
+}
+/* line 57, ../sass/led.scss */
+#section8 .wrap .main08 .right08 {
+  float: left;
+  position: relative;
+  width: 40%;
+}
+
+/* line 68, ../sass/led.scss */
+#section9 .wrap .title {
+  padding: 5% 0;
+}
+/* line 72, ../sass/led.scss */
+#section9 .wrap .main09 .left09 {
+  padding: 5% 0 0;
+}
+
+/* line 82, ../sass/led.scss */
+#section10 .wrap .title {
+  padding-bottom: 0;
+}
+/* line 86, ../sass/led.scss */
+#section10 .wrap .main10 .right10 {
+  margin-top: -5%;
 }

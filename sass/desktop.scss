@@ -1,72 +1,7 @@
 @charset "UTF-8";
 @import "common";
 
+
 .wrap {
-   width: 1280px;
-}
-.title {
-  padding: 5% 0 7%;
-}
-#section1 {
-  .main01{
-    padding: 10% 0 0;  
-  }
-  .logo {
-    bottom: 0.5%;
-  }
-}
-
-#section2 {
-  .wrap {
-    .title01 {
-	  padding-top: 26%;
-	}
-  }  
-}
-
-#section3 {
-  .wrap {
-    .main03 {
-	  .box01,.box02,.box03,.box04,.box05,.box06,.box07 {
-	    width: 8.5%;
-	  }
-	  .box08 {
-	    img {
-		  width: 81.8%;
-		  margin-left: 2.1%；
-		}
-	  }
-	}
-  } 
-}
-
-#section8 {
-  .wrap {
-    .title {
-	  padding-bottom: 3%;
-	}
-    .main08 {
-	  .right08 {
-        float: left;
-        position: relative;
-        width: 40%;
-	  }
-	}
-  }
-}
-
-#section10 {
-  .wrap {
-    .title {
-	  padding-bottom: 0;
-	}
-	.main10 {
-	  .right10 {
-	    margin-top: -5%;
-		.rain {
-		  
-		}
-	  }
-	}
-  }
+   width: 960px;
 }
