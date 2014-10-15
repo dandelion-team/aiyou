@@ -5,12 +5,11 @@
 body {
   color: #333;
   font-family: "微软雅黑","Microsoft YaHei",Lucida,Verdana,"Hiragino Sans GB",STHeiti,"WenQuanYi Micro Hei","Droid Sans Fallback",SimSun,"proxima-nova","Helvetica Neue",Helvetica,Arial,sans-serif;
-  font-size: 12px !important;
 }
 
 .title {
 	    text-align: left;
-		padding: 0 0 12% 0;
+		padding: 5% 0 12%;
         img {
 		   height: auto;
 		}
@@ -50,31 +49,13 @@ body {
 		 }
 	    .logo {
 	 	  width: 45%;
-		  margin: 0 auto;
 		  padding: 0 20%;
 		  position: absolute;
 		  bottom:3%;
-		  left: 8%;
-		  
-		  .logo01 {
-	        float: left;
-		    width: 52%;
-			img {
-	          width: 100%;
-		      height: auto;
-		      max-height: 480px;
-	        }
-	      }
-		  .heart {
-	        float: right;
-		    width: 20%;
-			margin-top: -3%;
-			img {
-	          width: 100%;
-		      height: auto;
-		      max-height: 182px;
-	        }
-	      }
+		  left: 8%;		  
+		  img {
+		    width: 100%;
+		  }
 	   }	   
 }
 
@@ -137,7 +118,7 @@ body {
 	      height: 100%;
           .title {
 		    img {
-			  width: 24%;
+			  width: 20%;
 			}
 		  }
 		  .main03 {
@@ -200,12 +181,12 @@ body {
 	    background-color: #127083 !important;
 		.title {
 		    img {
-			  width: 24%;
+			  width: 20%;
 			}
 		}
 		.main04 {
-		  width: 59.6%;
-		  background: url("../imgs/in2-bg.png") repeat bottom center transparent !important;
+		  width: 48%;
+		  background: #628b9b!important;
 		  border-radius: 5px;
 		  margin: 0 0 0 17.8%;
 		  padding: 2% 0;
@@ -223,7 +204,7 @@ body {
 	      }
 		  .row01,.row02,.row03,.row04 {
 		    text-align: left;
-		    width: 95.5%;
+		    width: 120%;
 		    position: relative;
 		    left: -746px;
 			
@@ -241,7 +222,7 @@ body {
 	    background-color: #127083 !important;
 		.title {
 		    img {
-			  width: 40.3%;
+			  width: 36%;
 			}
 		}
 		.main05 {
@@ -257,11 +238,22 @@ body {
 			  height: auto;
 			}
 	      }
-	      .right05 {
-	        float: right;
+		  .right05-box {
+		    float: right;
 		    width: 59.1%;
-		    height: 250px;
-	      }
+			position: relative;
+		    >img {
+			  width: 100%;
+			  height: auto;
+			}
+	        .right05 {
+	          width: 100%;
+		  	  height: 100%;
+			  position: absolute;
+			  top: 0;
+			  left: 0;
+	         }
+		  }
 	    }
 }
 // section6
@@ -270,14 +262,14 @@ body {
 	    background-color: #127083 !important;
 		.title {
 		    img {
-			  width: 40.4%;
+			  width: 36%;
 			}
 		}
 		.main06 {
 	      width: 78%;
 		  height: auto;
 		  .left06 {
-	        width: 23.8%;
+	        width: 27.8%;
 		    float: left;
 			padding: 0 0 4%;
 			
@@ -286,11 +278,23 @@ body {
 			  height: auto;
 			}
 	      }
-	      .right06 {
-	        float: right;
-			padding-top: 2%;
-			//background: url("../imgs/in4-rbg.png") no-repeat bottom right/100% auto;
-	      }
+		  .right06-box {
+		    float: left;
+			margin: 2% 0 0 12%;
+			width: 60%;
+			position: relative;
+			img {
+			  width: 100%;
+			}
+	        .right06 {
+	          position:absolute;
+			  top: 0;
+			  left: 0;
+			  width: 100%;
+			  height: 100%;
+			  //background: url("../imgs/in4-rbg.png") no-repeat bottom right/100% auto;
+	        }
+		  }
 	    }
 }
 // section7
@@ -301,7 +305,7 @@ body {
 	      height: 100%;
           .title {
 		    img {
-			  width: 40.3%;
+			  width: 36%;
 			}
 		  }
 		  .main07 {
@@ -313,18 +317,13 @@ body {
 			}
 			.zz {
 			  bottom: 0;
-			  color: #fff;
-			  font-size: 30px;
 			  position: absolute;
 			  right: 22%;
-			  border-top: 4px solid #fff;
-			  border-bottom: 4px solid #fff;
-			  line-height: 37px;
-			  padding: 2px 0;
-			  
-			  .zz-b {
-			     font-weight: bold;
+			  width: 18.5%;
+			  img {
+			    width: 100%;
 			  }
+
 			}
 			.icon01 {
 			  bottom: 3%;
@@ -389,7 +388,7 @@ body {
           .title {
 		    padding-bottom: 5%;
 		    img {
-			  width: 40.3%;
+			  width: 36%;
 			}
 		  }
 		  .main08 {
@@ -473,24 +472,36 @@ body {
 	      height: 100%;
           .title {
 		    img {
-			  width: 23.5%;
+			  width: 15.7%;
 			}
 		  }
 		  .main09 {
 		    .left09 {
 			  float: left;
 			  width: 18.5%;
-			  padding-right: 15%;
+
 			  img {
 			    width: 100%;
 				height: auto;
 			  }
 			}
-			.right09 {
+			.right09-box {
 			  float: left;
 			  width: 46.1%;
-			  height:238px;
-			  background: url("../imgs/in7-r-bg.png") no-repeat bottom right/100% auto;
+			  margin: 2% 0 0 12%;
+			  position: relative;
+			  >img {
+			    width: 100%;
+				height: auto;
+			  }
+			  .right09 {
+			    width: 100%;
+				height: 100%;
+				position: absolute;
+				top: 0;
+				left: 0;
+			    background: url("../imgs/in7-r-bg.png") no-repeat bottom right/100% auto;
+			  }
 			}
 		  }
 		}
@@ -505,7 +516,7 @@ body {
           .title {
 		    padding-bottom: 2%;
 		    img {
-			  width: 23.1%;
+			  width: 15.7%;
 			}
 		  }
 		  .main10 {
@@ -537,7 +548,7 @@ body {
 			      position: absolute;
 			      z-index: 3;
 			      color: #ffffff;
-			      font-size: 90%;
+			      font-size: 12px;
 			      text-align: left;
 			    }
 			    .rain01 {
@@ -603,10 +614,11 @@ body {
           .title {
 		    padding-bottom: 7%;
 		    img {
-			  width: 27%;
+			  width: 20.5%;
 			}
 		  }
 		  .main11 {
+		    position: relative;
 		    .left11-01 {
 			   width: 18.8%;
 			   float: left;
@@ -617,7 +629,7 @@ body {
 			   }
 			}
 			.left11-02 {
-			  background-color: #434751;
+			  background-color: #4f7f8f;
 			  width: 36%;
 			  text-align: left;
 			  padding: 1% 2.5% 1% 1.7%;
@@ -626,7 +638,7 @@ body {
 			    padding: 1.5% 0;
 				clear: both;
 				img {
-				  width: 12%;
+				  width: 100%;
 				  float: left;
 				}
 				.text11-01 {
@@ -642,9 +654,11 @@ body {
 			  }
 			}
 			.left11-03 {
-			  padding: 3% 0 0 4%;
-			  width: 32.8%;
-			  float: left;
+			  padding: 10% 0 0 4%;
+			  width: 36%;
+			  position: absolute;
+              right: 0;
+			  bottom: 0;
 			  img {
 			    width: 100%;
 				height: auto;
@@ -659,30 +673,44 @@ body {
 #section12 {
 	    background-color: #127083 !important;
 		.wrap {
-	      height: auto;
+	      height: 100%;
           .title {
+		    padding-bottom: 2%;
 		    img {
-			  width: 26%;
+			  width: 13%;
 			}
+		  }
+		  .main12 {
+		     position: relative;
+		     width: 59.2%;
+			 >img {
+			   width: 100%;
+			 }
+			 .dress {
+			   color: #ffffff;
+			   font-size: 13px;
+			   position: absolute;
+			   text-align: left;
+			   z-index: 3;
+			 }
+			 .dress01 {
+			   bottom: 13.5%;
+			   right: 5.5%;
+			 }
+			 .dress02 {
+			   bottom: 35%;
+			   right: 34.5%;
+			 }
+			 .dress03 {
+			   bottom: 51%;
+			   right: 45.3%;
+			 }
+			 .dress04 {
+			   right: 4.5%;
+			   top: 31%;
+			 }
 		  }
 		}
-		  .main12 {
-		    background-color: #6fc4b2;
-			.left12 {
-			  width: 960px;
-			  margin: 0 auto;
-			  padding: 2% 0;
-			  .left12-01,.left12-02,.left12-03 {
-			    float: left;
-				margin-right: 2%;
-				p {
-				  text-align: center;
-				  color: #fff;
-				  font-size: 12px;
-				}
-			  }
-			}
-		  }
 		
 }
 
@@ -694,13 +722,24 @@ body {
 	      height: 100%;
           .title {
 		    img {
-			  width: 25.5%;
+			  width: 34%;
 			}
 		  }
-		  .main13 {
-		    background: url("../imgs/in14-img.png") no-repeat 0 0;
-			height: 243px;
-			width: 75.9%%;
+		  .main13-box {
+		    width: 75.9%;
+			position: relative;
+			img {
+			  width: 100%;
+			  height: auto;
+			}
+		    .main13 {
+		      //background: url("../imgs/in14-img.png") no-repeat 0 0/100% auto;
+			  position: absolute;
+			  top: 0;
+			  left: 0;
+			  width: 100%;
+			  height: 100%;
+		    }
 		  }
 		}
 }
