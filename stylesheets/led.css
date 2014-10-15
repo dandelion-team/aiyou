@@ -941,47 +941,51 @@ body {
   margin-top: -6%;
 }
 /* line 93, ../sass/led.scss */
+#section10 .wrap .main10 .right10 .rain {
+  font-size: 16px;
+}
+/* line 96, ../sass/led.scss */
 #section10 .wrap .main10 .right10 .rain02 {
   left: 36%;
 }
-/* line 96, ../sass/led.scss */
+/* line 99, ../sass/led.scss */
 #section10 .wrap .main10 .right10 .rain03 {
   left: 41%;
 }
-/* line 99, ../sass/led.scss */
+/* line 102, ../sass/led.scss */
 #section10 .wrap .main10 .right10 .rain04 {
   left: 30%;
 }
-/* line 102, ../sass/led.scss */
+/* line 105, ../sass/led.scss */
 #section10 .wrap .main10 .right10 .rain06 {
   left: 23%;
 }
 
-/* line 112, ../sass/led.scss */
+/* line 115, ../sass/led.scss */
 #section11 .wrap .title {
   padding-bottom: 2%;
 }
-/* line 116, ../sass/led.scss */
+/* line 119, ../sass/led.scss */
 #section11 .wrap .main11 .left11-02 {
   width: 31%;
 }
 
-/* line 125, ../sass/led.scss */
+/* line 128, ../sass/led.scss */
 #section12 .wrap .main12 {
   margin: -7% 0 0 15%;
   width: 59.2%;
 }
-/* line 128, ../sass/led.scss */
+/* line 131, ../sass/led.scss */
 #section12 .wrap .main12 .dress02 {
   bottom: 35%;
   right: 13%;
 }
-/* line 132, ../sass/led.scss */
+/* line 135, ../sass/led.scss */
 #section12 .wrap .main12 .dress03 {
   bottom: 51%;
   right: 16%;
 }
-/* line 137, ../sass/led.scss */
+/* line 140, ../sass/led.scss */
 #section12 .wrap .title {
   padding-bottom: 0;
 }
