@@ -56,7 +56,7 @@ $(document).ready(function() {
 			
 			// 爱佑童心
 			if (index == 3) {
-                $('.right05').highcharts({
+                $('.right03').highcharts({
                     chart: {
                         type: 'column',
 						backgroundColor: 'transparent',
@@ -129,7 +129,7 @@ $(document).ready(function() {
 			
 			// 爱佑童心（定点医院）
 			if (index == 4) {
-			    $('.right06').highcharts({
+			    $('.right04').highcharts({
                     chart: {
                         type: 'bubble',
                         zoomType: 'xy',
@@ -203,7 +203,7 @@ $(document).ready(function() {
 						
 			// 爱佑童心（年养护数据）
 			if (index == 5) {
-			    $('.right09').highcharts({
+			    $('.right05').highcharts({
                     chart: {
                         type: 'area',
 						backgroundColor: 'transparent',
@@ -299,7 +299,7 @@ $(document).ready(function() {
 			
 			// 公益创投
 			if (index == 7) {
-			    $('.main13').highcharts({
+			    $('.main7').highcharts({
                     chart: {
                         type: 'area',
 						backgroundColor: 'transparent',
@@ -382,6 +382,47 @@ $(document).ready(function() {
                     }]
                 });
             }
+			
+			// 爱佑十年成长（2）
+			if (index == 8) {
+			    $('.row01').animate({
+                  opacity: 1,
+                  left: '-37.3%',
+                }, 1200, function() {
+                  showB();
+                });
+                
+                function showB() {
+                  $('.row02').animate({
+                    opacity: 1,
+                    left: '-37.3%',
+                  }, 1200, function() {
+                    showC();
+                  });
+                }
+                
+                function showC() {
+                  $('.row03').animate({
+                    opacity: 1,
+                    left: '-37.3%',
+                  }, 1200, function() {
+                    showD();
+                  });
+                }
+                function showD() {
+                  $('.row04').animate({
+                    opacity: 1,
+                    left: '-37.3%',
+                  }, 1200, function() {
+                  });
+                }
+			} else {
+			    $('.row01').css("left", "-746px").css("opacity", 0);
+				$('.row02').css("left", "-746px").css("opacity", 0);
+				$('.row03').css("left", "-746px").css("opacity", 0);
+				$('.row04').css("left", "-746px").css("opacity", 0);
+			}
+
 		},
 		'onLeave': function(index, nextIndex, direction) {
 		}
