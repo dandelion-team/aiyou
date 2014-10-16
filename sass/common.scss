@@ -471,15 +471,17 @@ body {
 		.wrap {
 	      height: 100%;
           .title {
+		    padding: 5% 0 2%;
 		    img {
 			  width: 15.7%;
 			}
 		  }
 		  .main09 {
+		     position: relative;
 		    .left09 {
-			  float: left;
+			  position: absolute;
+			  bottom: 0;
 			  width: 18.5%;
-			  padding-top: 5%;
 
 			  img {
 			    width: 100%;
@@ -487,10 +489,9 @@ body {
 			  }
 			}
 			.right09-box {
-			  float: left;
-			  width: 46.1%;
-			  margin: 0 0 0 12%;
+			  margin: 0 0 0 30%;
 			  position: relative;
+			  width: 69%;
 			  >img {
 			    width: 100%;
 				height: auto;

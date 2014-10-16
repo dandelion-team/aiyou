@@ -27,9 +27,9 @@ $(document).ready(function() {
 		'sectionsColor': ['#F0F2F4', '#fff', '#fff'],
 		'navigation': true,
 		'navigationPosition': 'right',
-		'navigationTooltips': [ '1、十年绽放', '2、给生命一次机会', '3、爱佑十年成长（1）', '4、爱佑十年成长（2）', '5、爱佑童心（救助患儿）', 
-		                        '6、爱佑童心（定点医院）', '7、爱佑童心（项目实施流程）', '8、爱佑童心（联合救助网络）', '9、爱佑新生（年养护数据）', 
-								'10、爱佑新生（嵌入式养护中心）', '11、爱佑天使（定点医院统计）', '12、爱佑和康', '13、爱佑10年筹款总额增长', '14、爱佑慈善基金会'],
+		'navigationTooltips': [ '1、十年绽放', '2、爱佑十年成长（1）', '3、爱佑童心（救助患儿）', 
+		                        '4、爱佑童心（定点医院）', '5、爱佑新生（年养护数据）', '6、爱佑新生（嵌入式养护中心）', 
+								'7、爱佑10年筹款总额增长', '8、xxxxx', '9、爱佑慈善基金会'],
 
 		'afterLoad': function(anchorLink, index) {
 		    // 首页图片效果
@@ -37,19 +37,9 @@ $(document).ready(function() {
                 $('#homeImg').rotate3Di(20, 2000);
 	            setTimeout(function() {$('#homeImg').rotate3Di(0, 2000);}, 800);
 			}
-	
-			// 给生命一次机会
-			if (index == 2) {
-				$('.title01').animate({
-                  opacity: 1,
-                  bottom: 0,
-                }, 1200);
-			} else {
-			    $('.title01').css("bottom", "-500px").css("opacity", 0);
-			}
 			
 			// 爱佑十年成长（1）
-			if (index == 3) {
+			if (index == 2) {
 			    $('.box08').animate({
                   opacity: 1,
                   left: 0,
@@ -64,48 +54,8 @@ $(document).ready(function() {
 			    $('.img-box').css("bottom", "-500px").css("opacity", 0);
 			}
 			
-			// 爱佑十年成长（2）
-			if (index == 4) {
-			    $('.row01').animate({
-                  opacity: 1,
-                  left: '-37.3%',
-                }, 1200, function() {
-                  showB();
-                });
-                
-                function showB() {
-                  $('.row02').animate({
-                    opacity: 1,
-                    left: '-37.3%',
-                  }, 1200, function() {
-                    showC();
-                  });
-                }
-                
-                function showC() {
-                  $('.row03').animate({
-                    opacity: 1,
-                    left: '-37.3%',
-                  }, 1200, function() {
-                    showD();
-                  });
-                }
-                function showD() {
-                  $('.row04').animate({
-                    opacity: 1,
-                    left: '-37.3%',
-                  }, 1200, function() {
-                  });
-                }
-			} else {
-			    $('.row01').css("left", "-746px").css("opacity", 0);
-				$('.row02').css("left", "-746px").css("opacity", 0);
-				$('.row03').css("left", "-746px").css("opacity", 0);
-				$('.row04').css("left", "-746px").css("opacity", 0);
-			}
-			
 			// 爱佑童心
-			if (index == 5) {
+			if (index == 3) {
                 $('.right05').highcharts({
                     chart: {
                         type: 'column',
@@ -119,13 +69,13 @@ $(document).ready(function() {
                         text: ''
                     },
                     xAxis: {
+					    categories: ['2006', '2007', '2008', '2009', '2010', '2011', '2012', '2013', '2014'],
                         type: 'category',
 						labels: {
 						    style: {
                                 color: '#FFF',
                             }
-						}
-						,
+						},
 						lineWidth: 1,
 						lineColor: '#FFF',
 						minorGridLineWidth: 0,
@@ -141,7 +91,8 @@ $(document).ready(function() {
 						    step: 1,
 						    style: {
                                 color: '#FFF',
-                            }
+                            },
+							format: '{value:.,0f}'
 						},
 						gridLineColor: 'transparent',
 						lineWidth: 1,
@@ -155,22 +106,13 @@ $(document).ready(function() {
                      },
                      series: [{
 					    name: '数量',
-                        data: [
-                            ['2006', 139],
-                            ['2007', 1068],
-                            ['2008', 1335],
-                            ['2009', 2067],
-                            ['2010', 2990],
-                            ['2011', 3952],
-                            ['2012', 4591],
-                            ['2013', 4608],
-                            ['2014', 5500]
-                        ],
+                        data: [139, 1068, 1335, 2067, 2990, 3952, 4591, 4608, 5500],
                         dataLabels: {
 						   color: '#FFF',
                            enabled: true,
                            align: 'right',
-                           x: 10
+                           x: 10,
+						   y: -20,
                         },
 						color: '#fff342',
                      }],
@@ -186,7 +128,7 @@ $(document).ready(function() {
 			}
 			
 			// 爱佑童心（定点医院）
-			if (index == 6) {
+			if (index == 4) {
 			    $('.right06').highcharts({
                     chart: {
                         type: 'bubble',
@@ -258,40 +200,76 @@ $(document).ready(function() {
                     }]
                 });
 			}
-			
-			// 爱佑童心（项目实施流程）
-			if (index == 7) {
-			    $("#track").animate({opacity: 1}, 1200, "easeOutBounce");
-				setTimeout(function(){$('.icon01').animate({opacity: 1}, 1200, "easeOutBounce");}, 1000);
-				setTimeout(function(){$('.icon02').animate({opacity: 1}, 1200, "easeOutBounce");}, 2000);
-				setTimeout(function(){$('.icon03').animate({opacity: 1}, 1200, "easeOutBounce");}, 3000);
-				setTimeout(function(){$('.icon04').animate({opacity: 1}, 1200, "easeOutBounce");}, 4000);
-				setTimeout(function(){$('.icon05').animate({opacity: 1}, 1200, "easeOutBounce");}, 5000);
-			} else {
-			    $("#track").css("opacity", 0);
-			    $(".icon01").css("opacity", 0);
-				$(".icon02").css("opacity", 0);
-				$(".icon03").css("opacity", 0);
-				$(".icon04").css("opacity", 0);
-				$(".icon05").css("opacity", 0);
-			}
-			
-			// 爱佑童心（联合救助网络）
-			if (index == 8) {
-				$(".yuan01").fadeIn(800, function(){});
-                setTimeout(function(){$(".yuan02").fadeIn(800);}, 800);
-                setTimeout(function(){$(".yuan03").fadeIn(800);}, 1600);
-				setTimeout(function(){$(".yuan04").fadeIn(800);}, 2400);
-				setTimeout(function(){$(".yuan05").fadeIn(800);}, 3200);
-				setTimeout(function(){$(".yuan06").fadeIn(800);}, 4000);
-				setTimeout(function(){$(".yuan07").fadeIn(800);}, 4800);
-				setTimeout(function(){$(".yuan08").fadeIn(800);}, 5600);
-			} else {
-			    $(".yuan").css("display", 'none');
-			}
+						
+			// 爱佑童心（年养护数据）
+			if (index == 5) {
+			    $('.right09').highcharts({
+                    chart: {
+                        type: 'area',
+						backgroundColor: 'transparent',
+                    },
+                    title: {
+                        text: ''
+                    },
+                    subtitle: {
+                        text: ''
+                    },
+                    xAxis: {
+                        categories: ['2011.11', '2012.01', '2012.03', '2012.05', '2012.07', '2012.09', '2012.11', 
+						                        '2013.01', '2013.03', '2013.05', '2013.07', '2013.09', '2013.11',
+												'2014.01', '2014.03', '2014.05', '2014.07'],
+						lineColor: '#FFF',
+						labels: {
+						    style: {
+                                color: '#FFF',
+                            },
+							rotation: -45,
+                        },
+						tickWidth: 0,
+                    },
+                    yAxis: {
+						min: 0,
+                        title: {
+                            text: ''
+                        },
+						gridLineColor: 'transparent',
+						lineWidth: 1,
+						lineColor: '#FFF',
+						labels: {
+						    step: 1,
+						    style: {
+                                color: '#FFF',
+                            },
+							format: '{value:.,0f}'
+					    }
+                    },
+                    tooltip: {
+                        pointFormat: '{series.name} : {point.y}',
+                    },
+                    plotOptions: {
+						series: {
+                            fillOpacity: 0.05
+                        }
+                    },
+					credits: {
+					    enabled: false,
+					},
+                    legend: {
+					    enabled: false,
+                    },
+                    series: [{
+                        name: '数据',
+						color: '#fff000',
+						marker: {
+						    enabled: false,
+						},
+                        data: [2, 7, 14, 35, 51, 71, 98, 136, 190, 250, 314, 368, 516, 760, 1051, 1373, 1744]
+                    }]
+                });
+            }
 			
 			// 爱佑童心（嵌入式养护中心）
-			if (index == 10) {
+			if (index == 6) {
                 $('.rain01').animate({top:'32.5%', opacity: 1}, 1200, function() {});
                 $('.rain02').animate({top:'41.5%', opacity: 1}, 1200, function() {});
                 $('.rain03').animate({top:'51.5%', opacity: 1}, 1200, function() {});
@@ -319,30 +297,8 @@ $(document).ready(function() {
                 $('.rain12').css("bottom", '200%');					    
 			}
 			
-			// 爱佑和康
-			if (index == 12) {
-			    $('.dress04').animate({top:'31.5%', opacity: 1}, 1200, function() {showShenZhen();});
-                
-				function showShenZhen() {
-				  $('.dress01').animate({bottom:'13.5%', opacity: 1}, 1200, function() {showNingXia();});
-                }
-				
-				function showNingXia() {
-                  $('.dress03').animate({bottom:'51%', opacity: 1}, 1200, function() {showHuBei();});
-                }
-				
-				function showHuBei() {
-                  $('.dress02').animate({bottom:'35%', opacity: 1}, 1200, function() {});
-                }
-			} else {
-                $('.dress01').css("bottom", '200%');
-                $('.dress02').css("bottom", '200%');
-                $('.dress03').css("bottom", '200%');
-                $('.dress04').css("top", '-200%');			    
-			}
-			
 			// 公益创投
-			if (index == 13) {
+			if (index == 7) {
 			    $('.main13').highcharts({
                     chart: {
                         type: 'area',
@@ -355,7 +311,7 @@ $(document).ready(function() {
                         text: ''
                     },
                     xAxis: {
-                        categories: ['2005', '2006', '2007', '2008', '2009', '2010', '2011', '2012', '2013'],
+                        categories: ['2005', '2006', '2007', '2008', '2009', '2010', '2011', '2012', '2013', '2014'],
 						lineColor: '#FFF',
 						labels: {
 						    style: {
@@ -376,26 +332,12 @@ $(document).ready(function() {
 						    step: 1,
 						    style: {
                                 color: '#FFF',
-                            }
+                            },
+							format: '{value:.,0f}'
 					    }
                     },
                     tooltip: {
                         pointFormat: '{series.name} : {point.y}',
-                    },
-                    plotOptions: {
-                        area: {
-                            pointStart: 2005,
-                            marker: {
-                                enabled: false,
-                                symbol: 'circle',
-                                radius: 2,
-                                states: {
-                                    hover: {
-                                        enabled: true
-                                    }
-                                }
-                            }
-                        }
                     },
 					credits: {
 					    enabled: false,
@@ -424,20 +366,19 @@ $(document).ready(function() {
                         dataLabels: {
 						   color: '#FFF',
                            enabled: true,
-						   format: "{y}",
-						   x: 10
+						   format: "{y:.,0f}",
+						   y: -20
                         },
-                        data: [2000, 2423, 7800, 5000, 6000, 7000, 2300, 4500, 10000]
+                        data: [148.16, 1027.07, 2565.51, 3784.50, 8253.95, 13561.16, 20535.20, 31688.51, 47563.92, 58920.39]
                     }, {
                         name: '累积公益支出总额(万元)',
 						color: '#fcec00',
                         dataLabels: {
 						   color: '#FFF',
                            enabled: true,
-						   format: "{y}",
-						   y: 30
+						   format: "{y:.,0f}",
                         },
-                        data: [1000, 2000, 3000, 8000, 5340, 6000, 3400, 8000, 9000]
+                        data: [135.78, 338.41, 1404.36, 2580.05, 4357.43, 7320.57, 12909.36, 21066.59, 31933.83, 42509.65]
                     }]
                 });
             }
@@ -446,17 +387,4 @@ $(document).ready(function() {
 		}
 	});
 	
-	function dictateRotate() {
-	    rotate(".flower01");
-		rotate(".flower03");
-		rotate(".flower04");
-	}
-	
-	function rotate(objID) {
-        var angle = 0;
-        setInterval(function() {
-          angle += 3;
-          $(objID).rotate(angle);
-        }, 50);
-    }
 });
