@@ -63,7 +63,7 @@
 				'sectionsColor': ['#F0F2F4', '#fff', '#fff'],
 				'navigation': true,
 				'navigationPosition': 'right',
-				'navigationTooltips': [ '1、十年绽放', '2、给生命一次机会', '3、爱佑十年成长（1）', '4、爱佑十年成长（2）', '5、爱佑童心（救助患儿）', '6、爱佑童心（定点医院）', '7、爱佑童心（项目实施流程）', '8、爱佑童心（联合救助网络）', '9、爱佑新生（年养护数据）', '10、爱佑新生（潜入式养护中心）', '11、爱佑天使（定点医院统计）', '12、爱佑和康', '13、爱佑10年筹款总额增长', '14、爱佑慈善基金会'],
+				'navigationTooltips': [ '1、十年绽放', '2、给生命一次机会', '3、爱佑十年成长（1）', '4、爱佑十年成长（2）', '5、爱佑童心（救助患儿）', '6、爱佑童心（定点医院）', '7、爱佑童心（项目实施流程）', '8、爱佑童心（联合救助网络）', '9、爱佑新生（年养护数据）', '10、爱佑新生（嵌入式养护中心）', '11、爱佑天使（定点医院统计）', '12、爱佑和康', '13、爱佑10年筹款总额增长', '14、爱佑慈善基金会'],
 
 				'afterLoad': function(anchorLink, index) {
 				    // 首页图片效果
@@ -182,7 +182,7 @@
 								lineColor: '#FFF',
                              },
         	    	         tooltip: {
-                                valueSuffix: '人'
+                                valueSuffix: '个'
                              },
                              legend: {
                                 enabled: false
@@ -198,7 +198,7 @@
                                     ['2011', 3952],
                                     ['2012', 4591],
                                     ['2013', 4608],
-                                    ['2014', 4591]
+                                    ['2014', 5500]
                                 ],
                                 dataLabels: {
 								   color: '#FFF',
@@ -231,7 +231,7 @@
                                 text: ''
                             },
                             xAxis: {
-							    categories: ['2006', '2007', '2008', '2009', '2010', '2011', '2012', '2013'],
+							    categories: ['2006', '2007', '2008', '2009', '2010', '2011', '2012', '2013', '2014'],
 								labels: {
 								    step: 1,
 								    style: {
@@ -247,7 +247,7 @@
 							yAxis: {
 							    categories: [],
                                 min: 0,
-								max: 60,
+								max: 70,
                                 title: {
                                     text: ''
                                 },
@@ -276,7 +276,7 @@
                             series: [{
 							    name: '定点医院',
 								color: '#8cc43d',
-                                data: [[2006, 3, 3], [2007, 6, 6], [2008, 8, 8], [2009, 9, 9], [2010, 19, 19], [2011, 31, 31], [2012, 36, 36], [2013, 54, 54]],
+                                data: [[2006, 3, 3], [2007, 6, 6], [2008, 8, 8], [2009, 9, 9], [2010, 19, 19], [2011, 31, 31], [2012, 36, 36], [2013, 54, 54], [2014, 58, 58]],
                                 dataLabels: {
 								   color: '#FFF',
                                    enabled: true,
@@ -316,7 +316,7 @@
 					    $(".yuan").css("display", 'none');
 					}
 					
-					// 爱佑童心（潜入式养护中心）
+					// 爱佑童心（嵌入式养护中心）
 					if (index == 10) {
                         $('.rain01').animate({top:'32.5%', opacity: 1}, 1200, 'easeOutBounce', function() {});
                         $('.rain02').animate({top:'41.5%', opacity: 1}, 1200, 'easeOutBounce', function() {});
@@ -347,10 +347,19 @@
 					
 					// 爱佑和康
 					if (index == 12) {
-                        $('.dress01').animate({bottom:'13.5%', opacity: 1}, 1200, 'easeOutBounce', function() {});
-                        $('.dress02').animate({bottom:'35%', opacity: 1}, 1200, 'easeOutBounce', function() {});
-                        $('.dress03').animate({bottom:'51%', opacity: 1}, 1200, 'easeOutBounce', function() {});
-                        $('.dress04').animate({top:'31.5%', opacity: 1}, 1200, 'easeOutBounce', function() {});
+					    $('.dress04').animate({top:'31.5%', opacity: 1}, 1200, function() {showShenZhen();});
+                        
+						function showShenZhen() {
+						  $('.dress01').animate({bottom:'13.5%', opacity: 1}, 1200, function() {showNingXia();});
+                        }
+						
+						function showNingXia() {
+                          $('.dress03').animate({bottom:'51%', opacity: 1}, 1200, function() {showHuBei();});
+                        }
+						
+						function showHuBei() {
+                          $('.dress02').animate({bottom:'35%', opacity: 1}, 1200, function() {});
+                        }
 					} else {
                         $('.dress01').css("bottom", '200%');
                         $('.dress02').css("bottom", '200%');
@@ -382,7 +391,6 @@
 								tickWidth: 0,
                             },
                             yAxis: {
-							    //categories: [],
 								min: 0,
                                 title: {
                                     text: ''
@@ -399,7 +407,7 @@
                             },
                             tooltip: {
                                 pointFormat: '{series.name} : {point.y}',
-								valueSuffix: '元'
+								valueSuffix: '万元'
                             },
                             plotOptions: {
                                 area: {
@@ -438,22 +446,22 @@
                                 }
                             },
                             series: [{
-                                name: '捐款总额',
+                                name: '累积捐款总额',
 								color: '#8dc43f',
                                 dataLabels: {
 								   color: '#FFF',
                                    enabled: true,
-								   format: "{y}元",
+								   format: "{y}万元",
 								   x: 10
                                 },
                                 data: [2000, 2423, 7800, 5000, 6000, 7000, 2300, 4500, 10000]
                             }, {
-                                name: '工益支出总额',
+                                name: '累积公益支出总额',
 								color: '#fcec00',
                                 dataLabels: {
 								   color: '#FFF',
                                    enabled: true,
-								   format: "{y}元",
+								   format: "{y}万元",
 								   y: 30
                                 },
                                 data: [1000, 2000, 3000, 8000, 5340, 6000, 3400, 8000, 9000]
@@ -645,7 +653,7 @@
 		</div>
 	</div>
 	
-	<!-- 第十页 爱佑新生（潜入式养护中心） -->
+	<!-- 第十页 爱佑新生（嵌入式养护中心） -->
 	<div class="section" id="section10">
 		<div class="wrap">
 			<div class="title">
@@ -658,7 +666,7 @@
 				<div class="right10">
 				  <img src="imgs/in8-r-bg.png">
 
-				    <div class="rain rain01" style="top: -200%; opacity: 0;"><img src="imgs/in8-r-icon.png"><span class="text01">爱佑新生乌鲁木齐儿童养护中心（筹）</span></div>
+				    <div class="rain rain01" style="top: -200%; opacity: 0;"><img src="imgs/in8-r-icon.png"><span class="text01">爱佑新生乌鲁木齐儿童养护中心</span></div>
 				    <div class="rain rain02" style="top: -200%; opacity: 0;"><span class="text02">爱佑新生宁夏儿童养护中心</span><img src="imgs/in8-r-icon.png"></div>
 				    <div class="rain rain03" style="top: -200%; opacity: 0;"><span class="text03">爱佑新生西安儿童养护中心</span><img src="imgs/in8-r-icon.png"></div>
 				    <div class="rain rain04" style="bottom: 200%; opacity: 0;"><span class="text04">爱佑新生成都儿童养护中心</span><img src="imgs/in8-r-icon.png"></div>
@@ -668,7 +676,7 @@
 				    <div class="rain rain08" style="top: -200%; opacity: 0;"><img src="imgs/in8-r-icon.png"><span class="text08">爱佑新生济南儿童养护中心</span></div>
 				    <div class="rain rain09" style="bottom: 200%; opacity: 0;"><img src="imgs/in8-r-icon.png"><span class="text09">爱佑新生南京儿童养护中心</span></div>
 				    <div class="rain rain10" style="bottom: 200%; opacity: 0;"><img src="imgs/in8-r-icon.png"><span class="text10">爱佑、万科武汉儿童养护中心</span></div>
-				    <div class="rain rain11" style="bottom: 200%; opacity: 0;"><img src="imgs/in8-r-icon.png"><span class="text11">爱佑新生南昌儿童养护中心（筹）</span></div>
+				    <div class="rain rain11" style="bottom: 200%; opacity: 0;"><img src="imgs/in8-r-icon.png"><span class="text11">爱佑新生南昌儿童养护中心</span></div>
 				    <div class="rain rain12" style="bottom: 200%; opacity: 0;"><img src="imgs/in8-r-icon.png"><span class="text12">爱佑新生广州儿童养护中心</span></div>
 
 				</div>
