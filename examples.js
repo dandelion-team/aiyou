@@ -292,18 +292,18 @@ $(document).ready(function() {
 			
 			// 爱佑童心（嵌入式养护中心）
 			if (index == 10) {
-                $('.rain01').animate({top:'32.5%', opacity: 1}, 1200, 'easeOutBounce', function() {});
-                $('.rain02').animate({top:'41.5%', opacity: 1}, 1200, 'easeOutBounce', function() {});
-                $('.rain03').animate({top:'51.5%', opacity: 1}, 1200, 'easeOutBounce', function() {});
-                $('.rain04').animate({bottom:'33%', opacity: 1}, 1200, 'easeOutBounce', function() {});
-                $('.rain05').animate({bottom:'30%', opacity: 1}, 1200, 'easeOutBounce', function() {});
-                $('.rain06').animate({bottom:'17%', opacity: 1}, 1200, 'easeOutBounce', function() {});
-                $('.rain07').animate({top:'49%', opacity: 1}, 1200, 'easeOutBounce', function() {});
-                $('.rain08').animate({top:'43%', opacity: 1}, 1200, 'easeOutBounce', function() {});
-                $('.rain09').animate({bottom:'37.5%', opacity: 1}, 1200, 'easeOutBounce', function() {});
-                $('.rain10').animate({bottom:'34%', opacity: 1}, 1200, 'easeOutBounce', function() {});
-                $('.rain11').animate({bottom:'22.8%', opacity: 1}, 1200, 'easeOutBounce', function() {});
-                $('.rain12').animate({bottom:'14.5%', opacity: 1}, 1200, 'easeOutBounce', function() {});
+                $('.rain01').animate({top:'32.5%', opacity: 1}, 1200, function() {});
+                $('.rain02').animate({top:'41.5%', opacity: 1}, 1200, function() {});
+                $('.rain03').animate({top:'51.5%', opacity: 1}, 1200, function() {});
+                $('.rain04').animate({bottom:'33%', opacity: 1}, 1200, function() {});
+                $('.rain05').animate({bottom:'30%', opacity: 1}, 1200, function() {});
+                $('.rain06').animate({bottom:'17%', opacity: 1}, 1200, function() {});
+                $('.rain07').animate({top:'49%', opacity: 1}, 1200, function() {});
+                $('.rain08').animate({top:'43%', opacity: 1}, 1200, function() {});
+                $('.rain09').animate({bottom:'37.5%', opacity: 1}, 1200, function() {});
+                $('.rain10').animate({bottom:'34%', opacity: 1}, 1200, function() {});
+                $('.rain11').animate({bottom:'22.8%', opacity: 1}, 1200, function() {});
+                $('.rain12').animate({bottom:'14.5%', opacity: 1}, 1200, function() {});
 			} else {
                 $('.rain01').css("top", '-200%');
                 $('.rain02').css("top", '-200%');
