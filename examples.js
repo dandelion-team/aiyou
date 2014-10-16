@@ -381,7 +381,6 @@ $(document).ready(function() {
                     },
                     tooltip: {
                         pointFormat: '{series.name} : {point.y}',
-						valueSuffix: '万元'
                     },
                     plotOptions: {
                         area: {
@@ -420,22 +419,22 @@ $(document).ready(function() {
                         }
                     },
                     series: [{
-                        name: '累积捐款总额',
+                        name: '累积捐款总额(万元)',
 						color: '#8dc43f',
                         dataLabels: {
 						   color: '#FFF',
                            enabled: true,
-						   format: "{y}万元",
+						   format: "{y}",
 						   x: 10
                         },
                         data: [2000, 2423, 7800, 5000, 6000, 7000, 2300, 4500, 10000]
                     }, {
-                        name: '累积公益支出总额',
+                        name: '累积公益支出总额(万元)',
 						color: '#fcec00',
                         dataLabels: {
 						   color: '#FFF',
                            enabled: true,
-						   format: "{y}万元",
+						   format: "{y}",
 						   y: 30
                         },
                         data: [1000, 2000, 3000, 8000, 5340, 6000, 3400, 8000, 9000]
