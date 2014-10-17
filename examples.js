@@ -103,7 +103,7 @@ $(document).ready(function() {
                      },
                      legend: {
                         enabled: false
-                     },
+                     }, 
 					 credits: {
 					    enabled: false,
 					 },
@@ -114,7 +114,7 @@ $(document).ready(function() {
                      },
                      series: [{
 					    name: '数量',
-                        data: [139, 1068, 1335, 2067, 2990, 3952, 4591, 4608, {color: '#1896d4', y: 5500, text: 'aaaaaaa'}],
+                        data: [139, 1068, 1335, 2067, 2990, 3952, 4591, 4608,  {color: '#8dc43f', y: 5500}],
                         dataLabels: {
 						   color: '#FFF',
                            enabled: true,
