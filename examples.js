@@ -104,9 +104,17 @@ $(document).ready(function() {
                      legend: {
                         enabled: false
                      },
+					 credits: {
+					    enabled: false,
+					 },
+                     plotOptions: {
+		                column: {
+                            borderColor: "",
+                        }
+                     },
                      series: [{
 					    name: '数量',
-                        data: [139, 1068, 1335, 2067, 2990, 3952, 4591, 4608, {color: '#1896d4', y: 5500}],
+                        data: [139, 1068, 1335, 2067, 2990, 3952, 4591, 4608, {color: '#1896d4', y: 5500, text: 'aaaaaaa'}],
                         dataLabels: {
 						   color: '#FFF',
                            enabled: true,
@@ -115,15 +123,7 @@ $(document).ready(function() {
 						   y: -20,
                         },
 						color: '#fff342',
-                     }],
-					credits: {
-					    enabled: false,
-					},
-					navigation: {
-					    buttonOptions: {
-						    enabled: false,
-						}
-					}
+                     }]
                  });
 			}
 			
@@ -139,7 +139,7 @@ $(document).ready(function() {
                         text: ''
                     },
                     xAxis: {
-					    categories: ['2006', '2007', '2008', '2009', '2010', '2011', '2012', '2013', '2014'],
+					    categories: ['2006', '2007', '2008', '2009', '2010', '2011', '2012', '2013', '2014截至到10月18日'],
 						labels: {
 						    step: 1,
 						    style: {
@@ -260,6 +260,7 @@ $(document).ready(function() {
                     series: [{
                         name: '数据',
 						color: '#fff000',
+						lineWidth: 4,
 						marker: {
 						    enabled: false,
 						},
@@ -383,11 +384,11 @@ $(document).ready(function() {
                 });
             }
 			
-			// 爱佑十年成长（2）
+			// 爱佑慈善基金会 贡献新模式
 			if (index == 8) {
 			    $('.row01').animate({
                   opacity: 1,
-                  left: '-37.3%',
+                  left: '0',
                 }, 1200, function() {
                   showB();
                 });
@@ -395,7 +396,7 @@ $(document).ready(function() {
                 function showB() {
                   $('.row02').animate({
                     opacity: 1,
-                    left: '-37.3%',
+                    left: '0',
                   }, 1200, function() {
                     showC();
                   });
@@ -404,7 +405,7 @@ $(document).ready(function() {
                 function showC() {
                   $('.row03').animate({
                     opacity: 1,
-                    left: '-37.3%',
+                    left: '0',
                   }, 1200, function() {
                     showD();
                   });
@@ -412,7 +413,15 @@ $(document).ready(function() {
                 function showD() {
                   $('.row04').animate({
                     opacity: 1,
-                    left: '-37.3%',
+                    left: '0',
+                  }, 1200, function() {
+				    showE();
+                  });
+                }
+				function showE() {
+                  $('.row05').animate({
+                    opacity: 1,
+                    left: '0',
                   }, 1200, function() {
                   });
                 }
@@ -421,6 +430,7 @@ $(document).ready(function() {
 				$('.row02').css("left", "-746px").css("opacity", 0);
 				$('.row03').css("left", "-746px").css("opacity", 0);
 				$('.row04').css("left", "-746px").css("opacity", 0);
+				$('.row05').css("left", "-746px").css("opacity", 0);
 			}
 
 		},
