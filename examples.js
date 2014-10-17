@@ -248,7 +248,8 @@ $(document).ready(function() {
                     },
                     plotOptions: {
 						series: {
-                            fillOpacity: 0.05
+                            fillOpacity: 0.05,
+							animation: {duration: 3000},
                         }
                     },
 					credits: {
@@ -358,7 +359,8 @@ $(document).ready(function() {
                     },
                     plotOptions: {
                         series: {
-                            fillOpacity: 0.28
+                            fillOpacity: 0.28,
+							animation: {duration: 3000},
                         }
                     },
                     series: [{
