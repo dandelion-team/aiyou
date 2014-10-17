@@ -9,7 +9,7 @@ body {
 
 .title {
 	    text-align: left;
-		padding: 5% 0 12%;
+		padding: 5% 0 12% 10%;
         img {
 		   height: auto;
 		}
@@ -130,14 +130,15 @@ body {
 	    background-color: #127083 !important;
 		.title {
 		    img {
-			  width: 36%;
+			  width: 43%;
 			}
 		}
 		.main03 {
-	      width: 76.5%;
+	      width: 90%;
 		  height: auto;
+		  margin: 0 auto;
 		  .left03 {
-	        width: 36.7%;
+	        width: 29%;
 		    float: left;
 			padding: 0.5% 0 3.2%;
 			
@@ -148,7 +149,7 @@ body {
 	      }
 		  .right03-box {
 		    float: right;
-		    width: 59.1%;
+		    width: 60%;
 			position: relative;
 		    >img {
 			  width: 100%;
@@ -170,14 +171,15 @@ body {
 	    background-color: #127083 !important;
 		.title {
 		    img {
-			  width: 36%;
+			  width: 43%;
 			}
 		}
 		.main04 {
-	      width: 78%;
+	      width: 90%;
 		  height: auto;
+		  margin: 0 auto;
 		  .left04 {
-	        width: 27.8%;
+	        width: 24%;
 		    float: left;
 			padding: 0 0 4%;
 			
@@ -187,9 +189,9 @@ body {
 			}
 	      }
 		  .right04-box {
-		    float: left;
-			margin: 2% 0 0 12%;
-			width: 60%;
+		    float: right;
+			margin: 2% 0 0;
+			width: 63%;
 			position: relative;
 			img {
 			  width: 100%;
@@ -213,27 +215,29 @@ body {
 		.wrap {
 	      height: 100%;
           .title {
-		    padding: 5% 0 2%;
+		    padding: 5% 0 12% 10%;
 		    img {
-			  width: 15.7%;
+			  width: 19%;
 			}
 		  }
 		  .main05 {
+		     margin: 0 auto;
 		     position: relative;
+		     width: 90%;
 		    .left05 {
-			  position: absolute;
-			  bottom: 0;
-			  width: 18.5%;
-
+			  float: left;
+			  width: 20.5%;
+              margin-top: 3%;
 			  img {
 			    width: 100%;
 				height: auto;
 			  }
 			}
 			.right05-box {
-			  margin: 0 0 0 30%;
+			  margin: 0;
+			  float:right;
 			  position: relative;
-			  width: 69%;
+			  width: 63%;
 			  >img {
 			    width: 100%;
 				height: auto;
@@ -244,7 +248,7 @@ body {
 				position: absolute;
 				top: 0;
 				left: 0;
-			    background: url("../imgs/in7-r-bg.png") no-repeat bottom right/100% auto;
+			    //background: url("../imgs/in7-r-bg.png") no-repeat bottom right/100% auto;
 			  }
 			}
 		  }
@@ -260,15 +264,17 @@ body {
           .title {
 		    padding-bottom: 2%;
 		    img {
-			  width: 15.7%;
+			  width: 19%;
 			}
 		  }
 		  .main6 {
 		    position: relative;
+			width: 90%;
+			margin: 0 auto;
 		    .left6 {
 			  bottom: 10%;
 			  position: absolute;
-			  width: 18.5%;
+			  width: 21%;
 			  img {
 			    width: 100%;
 				height: auto;
@@ -276,10 +282,8 @@ body {
 			}
 			.right6 {
 			  float: left;
-			  width: 46.1%;
-			  margin-left: 18.5%;
-			  //background: url("../imgs/in8-r-bg-bak.png") no-repeat bottom right/100% auto;
-			  width: 59.2%;
+			  width: 65.7%;
+			  margin-left: 22%;
 			  position: relative;
 			  >img {
 			    width: 100%;
@@ -360,13 +364,15 @@ body {
 		.wrap {
 	      height: 100%;
           .title {
+            padding: 5% 0 10% 10%;
 		    img {
 			  width: 34%;
 			}
 		  }
 		  .main7-box {
-		    width: 77%;
+		    width: 70%;
 			position: relative;
+			margin: 0 auto;
 			img {
 			  width: 100%;
 			  height: auto;
@@ -396,10 +402,10 @@ body {
 		  width: 48%;
 		  background: #628b9b!important;
 		  border-radius: 5px;
-		  margin: 0 0 0 17.8%;
+		  margin: 0 auto;
 		  padding: 2% 0;
 		  position: relative;
-		  float: left;
+
 		  .text {
 	        position: absolute;
 		    right: 6%;
@@ -414,7 +420,7 @@ body {
 		    text-align: left;
 		    width: 120%;
 		    position: relative;
-		    left: -746px;
+		    left: -200%;
 			
 			img {
 			  width: 100%;

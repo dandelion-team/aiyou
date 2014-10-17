@@ -1,0 +1,237 @@
+body {
+		color: #333;
+		font-family: "微软雅黑","Microsoft YaHei",Lucida,Verdana,"Hiragino Sans GB",STHeiti,"WenQuanYi Micro Hei","Droid Sans Fallback",SimSun,"proxima-nova","Helvetica Neue",Helvetica,Arial,sans-serif;
+		font-size: 12px;
+	}
+
+	/* Style for our header texts
+	* --------------------------------------- */
+	h1 {
+		font-size: 5em;
+		margin: 0;
+		padding: 0;
+	}
+	
+	h2 {
+		font-size: 2em;
+		margin: 0 0 18px 0;
+		padding: 0 0 3% 5%;
+		min-height: 50px;
+		color: #fff;
+		vertical-align: top;
+		line-height: 120%;
+	}
+	
+	.title {
+	    text-align: left;
+		padding: 0 0 15% 0;
+	}
+
+	/* Overwriting fullPage.js tooltip color */
+	.fp-tooltip {
+		color: #fff;
+	}
+	
+	#fp-nav span, .fp-slidesNav span {
+		border-color: #fff;
+	}
+	
+	#fp-nav li .active span, .fp-slidesNav .active span {
+		background: #fff;
+	}
+	.wrap {
+	    width: 960px;
+		overflow: hidden;
+	}
+	.clear {
+	    clear: both;
+	}
+	/* section1 */
+	#section1 {
+	    background-color: #ffffff !important;
+	}
+	
+	#home {
+	    background:  url("imgs/bg001.jpg") no-repeat top center/ 100% 100%;
+		width: 100%;
+		height: 80%;
+	}
+	#home .wrap {
+	    padding: 15% 0;
+	}
+	#home .wrap img {
+	    width: 35%;
+		height: auto;
+		max-height: 745px;
+	}
+	.logo {
+		width: 45%;
+		margin: 0 auto;
+		padding: 2% 20%;
+	}
+	.logo01 {
+	    float: left;
+		width: 52%;
+	}
+	.logo01 img {
+	    width: 100%;
+		height: auto;
+		max-height: 480px;
+	}
+	.heart {
+	    float: right;
+		width: 20%;
+	}
+	.heart img {
+	    width: 100%;
+		height: auto;
+		max-height: 182px;
+	}
+	/* section2 */
+	#section2 {
+	    /*background: -moz-linear-gradient(left, #7ac23c, #33a96d); !important;
+		background: -o-linear-gradient(top,#7ac23c, #33a96d);  !important;
+		background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#7ac23c), to(#33a96d));  !important;*/
+		background-color: #866527 !important;
+	}
+	#section2 .wrap {
+	    height: 100%;
+	}
+	#section2 .title01 {
+	    text-align: center;
+		padding-top: 20%;
+		margin: 0 auto;
+		clear: both;
+	}
+	
+	#flower {
+		height: 320px;
+		width: 406px;
+		position: absolute;
+		bottom: 0;
+		left: 277px;
+		background:  url("imgs/flower-b.png") no-repeat bottom center;
+	}
+	.flower01 {
+	    position: absolute;
+		bottom: 74px;
+		left: 0;
+	}
+	.flower02 {
+	    position: absolute;
+		bottom: 170px;
+		left: 77px;
+	}
+	.flower03 {
+	    position: absolute;
+		bottom: 124px;
+		left: 198px;
+	}
+	.flower04 {
+	    position: absolute;
+		bottom: 92px;
+		left: 330px;
+	}
+	
+	/* section3爱佑十年成长一 */
+	#section3 {
+	    background-color: #d1ce22 !important;
+	}
+	#section3 .wrap {
+	    height: 100%;
+	}
+	#section3 .main03 {
+	    position: absolute;
+		top: 85%;
+		width: 100%;
+	}
+	#section3 .box01 {
+	    position: absolute;
+		bottom: 75px;
+		left: 0;
+	}
+	#section3 .box02 {
+	    position: absolute;
+		bottom: 75px;
+		left: 11.5%;
+	}
+	#section3 .box03 {
+	    position: absolute;
+		bottom: 75px;
+		left: 23%;
+	}
+	#section3 .box04 {
+	    position: absolute;
+		bottom: 75px;
+		left: 34.5%;
+	}
+	#section3 .box05 {
+	    position: absolute;
+		bottom: 75px;
+		left: 46%;
+	}
+	#section3 .box06 {
+	    position: absolute;
+		bottom: 75px;
+		left: 57.5%;
+	}
+	#section3 .box07 {
+	    position: absolute;
+		bottom: 75px;
+		left: 69%;
+	}
+	#section3 .box08 {
+	    width: 100%;
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		text-align: left;
+	}
+	#section3 .box08 img {
+	    margin-left: 20px;
+	}
+	 
+	/* section4爱佑十年成长二 */
+	#section4 {
+	    background-color: #ce8818 !important;
+	}
+	#section4 .main04 {
+		width: 572px;
+		height: 250px;
+		background-color: #efcf52;
+		border-radius: 5px;
+		margin: 0 0 0 170px;
+		padding: 18px 0;
+		position: relative;
+	}
+	#section4 .main04 .text {
+	    position: absolute;
+		right: 30px;
+        top: 55px;
+	}
+	.row01,.row02,.row03,.row04 {
+		text-align: left;
+		width: 546px;
+		position: relative;
+		left: -746px;
+	}
+	/* section5爱佑童心 */
+	
+	#section5 {
+	    background-color: #22566c !important;
+	}
+	#section5 .main05 {
+	    width: 733px;
+	}
+	.left05 {
+	    width: 178px;
+		float: left;
+	}
+	.right05 {
+	    float: right;
+		width: 433px;
+		height: 250px;
+	}
+	
+	
+	

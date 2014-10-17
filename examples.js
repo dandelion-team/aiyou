@@ -29,7 +29,7 @@ $(document).ready(function() {
 		'navigationPosition': 'right',
 		'navigationTooltips': [ '1、十年绽放', '2、爱佑十年成长（1）', '3、爱佑童心（救助患儿）', 
 		                        '4、爱佑童心（定点医院）', '5、爱佑新生（年养护数据）', '6、爱佑新生（嵌入式养护中心）', 
-								'7、爱佑10年筹款总额增长', '8、xxxxx', '9、爱佑慈善基金会'],
+								'7、爱佑10年筹款总额增长', '8、爱佑慈善基金会 贡献新模式', '9、爱佑慈善基金会'],
 
 		'afterLoad': function(anchorLink, index) {
 		    // 首页图片效果
