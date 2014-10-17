@@ -114,7 +114,7 @@ $(document).ready(function() {
                      },
                      series: [{
 					    name: '数量',
-                        data: [139, 1068, 1335, 2067, 2990, 3952, 4591, 4608,  {color: '#8dc43f', y: 5500}],
+                        data: [139, 1068, 1335, 2067, 2990, 3952, 4591, 4608, {color: '#8dc43f', y: 5500}],
                         dataLabels: {
 						   color: '#FFF',
                            enabled: true,
